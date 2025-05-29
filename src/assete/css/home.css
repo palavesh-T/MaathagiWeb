@@ -1,0 +1,316 @@
+.home_div_add_pic{
+background-image:linear-gradient(to right, rgba(0, 26, 87, 0.5), rgba(0, 0, 0, 0.5)), url(../homepage//maathagi\ home\ pic.jpg);
+ background-size: cover;
+background-position: center;
+width: 100%;
+height: 110vh;
+position: relative;
+}
+.homer_cont_divs_over{
+  position: absolute;
+  top:35%;
+  left: 8%;
+  transform: translateX(-100%);
+  z-index: 2;
+  animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+.homer_cont_divs_over small{
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+.homer_cont_divs_over p{
+  max-width: 600px;
+  font-size: 20px;
+  color: #fff;
+  margin: 30px 0px;
+  line-height: 1.9;
+  font-family: emoji;
+  
+}
+  .homer_cont_divs_over h1{
+    font-size: 50px;
+    margin: 10px 0 30px;
+    line-height: 1.9;
+    font-weight: 600;
+    color: #fff;
+    font-family: sans-serif;
+  }
+   .homer_cont_divs_over h2{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0px;
+  }
+.hm_bnts button{
+  padding: 15px 30px;
+  background-color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+  margin: 0px 0px ;
+  color: inherit;
+  border: none;
+}
+.hm_bnts button:hover{
+  background-color: darkblue;
+ color: #fff;
+}
+.hm_bnts button:hover a {
+  color: #fff; 
+}
+
+/*its my code*/
+
+.maathangi_home_div_1{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.maathangi_home_div_2 {
+    width: 150%;
+}
+
+.maathangi_home_div_2 img{
+    width: 100%;
+}
+.maathangi_home_div_3{
+    padding: 20px;
+}
+.maathangi_home_div_4 p{
+   
+    line-height: 1.7;
+     font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+.maathangi_home_div_4 h1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+   color: var(--themeht-secondary-color);
+}
+.rat_tar_lis{
+     border-top: 1px solid #dcdcdc;
+  margin-top: 0px;
+}
+.maathagi_about_more_btn_1{
+    margin-top: 10px;
+}
+.maathagi_about_more_btn_1 button{
+    padding: 15px 10px;
+    border: none;
+    background: var(--themeht-button-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.maathagi_new_text_design {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.maathagi_new_text_design_1 {
+  display: flex;
+  animation: scrollText 30s linear infinite;
+}
+
+.maathagi_new_text_design_1 h1 {
+  font-size: 100px;
+  margin: 0;
+  padding-right: 100px; /* spacing between repeats */
+  white-space: nowrap;
+   position: relative;
+  z-index: 2;
+  color: #000;
+}
+
+/* Keyframes for smooth right-to-left scroll */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px #000; /* Outline thickness and color */
+}
+
+/* Smoke effect on left and right */
+.maathagi_new_text_design::before,
+.maathagi_new_text_design::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 100%;
+  z-index: 1;
+  background: radial-gradient(circle, rgb(86, 111, 254) 10%, transparent 70%);
+  filter: blur(30px);
+  opacity: 0.9;
+  animation: smokeMove 6s ease-in-out infinite alternate;
+}
+
+.maathagi_new_text_design::before {
+  left: 0;
+}
+
+.maathagi_new_text_design::after {
+  right: 0;
+}
+
+/* Floating motion for the smoke */
+@keyframes smokeMove {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-20px) scale(1.2);
+  }
+}
+.maathagi_old_design_inpt {
+    padding: 20px;
+}
+.maathagi_old_design_inpt_1{
+    text-align: center;
+}
+.maathagi_old_design_inpt_1 h1{
+    color: var(--themeht-secondary-color);
+}
+.maathagi_old_design_inpt_3{
+    display: flex;
+    gap: 5%;
+    padding: 50px;
+}
+.maathagi_old_design_inpt_4 h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.maathagi_old_design_inpt_4 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.maathagi_old_design_inpt_4_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-icon {
+  width: 50px;
+  height: 50px;
+   color: #4CAF50;
+}
+.maathagi_new_dign_sub_card_1{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.maathagi_new_dign_sub_card_2,.maathagi_new_dign_sub_card_4{
+    width: 100%;
+}
+.maathagi_new_dign_sub_card_2 h1{
+    font-size: 40px;
+    color:var(--themeht-secondary-color) ;
+}
+.maathagi_new_dign_sub_card_2 h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -20px;
+}
+.maathagi_new_icon_add_1{
+    text-align: center;
+}
+.maathagi_new_icon_add_1 h4{
+    font-size: 25px;
+    font-weight: 400;
+}
+.maathagi_new_dign_sub_card_3 p{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+.maathagi_new_card_design_back_clr{
+    background-image: url(../homepage//04.png);
+    background-position: center;
+    background-size: cover;
+    background-color:var(--themeht-secondary-color) ;
+}
+.maathagi_new_card_design_back_clr_1{
+    text-align: center;
+    padding: 20px;
+   
+}
+.maathagi_new_card_design_back_clr_1 h2 {
+    color: #fff;
+}
+.maathagi_new_card_design_back_clr_1 h3{
+    color: #fff;
+    font-size: 25px;
+}
+.maathagi_div_pic img{
+    width: 100%;
+    border-radius: 5px;
+}
+.maathagi_new_card_design_back_clr_2{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.maathagi_new_card_design_back_clr_3{
+    padding: 10px;
+}
+.maathagi_new_card_design_back_clr_4{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.maathagi_contnts_add p{
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+    font-weight: 400;
+}
+.maathagi_contnts_add h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+.phd_good_proposal_tips {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.phd_good_proposal_tips h2 {
+  color: var(--themeht-secondary-color);
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.phd_good_proposal_tips p {
+  font-size: 16px;
+    font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1.9;
+  text-align: center;
+}

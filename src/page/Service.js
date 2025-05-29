@@ -1,0 +1,93 @@
+import React from "react";
+import Header from "./Header";
+import "../assete/css/service.css";
+import { Link } from "react-router-dom";
+import web_design from "../assete/about/website design.jpg";
+import college_design from "../assete/about/college website.jpg";
+import industry_design from "../assete/about/industry.jpg";
+import Footer from "./Footer";
+
+const Service = () =>{
+
+    return(
+        <>
+        <Header/>
+        <div className="service_maathagi_div"></div>
+
+        <div className="maathagi_service_div">
+            <div className="maathagi_service_div_1">
+                <div className="maathagi_service_div_3">
+                <div className="maathagi_service_div_2">
+                    <h2>Solutions</h2>
+                    <button><Link to="#">Topic Selection</Link></button>
+                    <button><Link to="#">Probem Identification</Link></button>
+                    <button><Link to="#">Literature Survey</Link></button>
+                    <button><Link to="#">Data Collection</Link></button>
+                    <button><Link to="#">Implementation</Link></button>
+                    <button><Link to="#">Manuscript Preparation</Link></button>
+                    <button><Link to="#">Synopsis Writing</Link></button>
+                    <button><Link to="#">Journal/Conference Publication</Link></button>
+                    <button><Link to="#">Thesis writing</Link></button>
+                    <button><Link to="#">Language Polishing</Link></button>
+                    <button><Link to="#">Document Editing/ Formatting</Link></button>
+                </div>
+            </div>
+            <div className="maathagi_service_div_4">
+                <div className="maathagi_service_div_5">
+                    <h2>Research & Development</h2>
+                    <p>It is considered very important for a research student or research scholar to prove their research skills to the doctoral committee through paper work. Here comes the professional support from MAATHANGI in writing the PhD doctoral thesis work in the way that how University / committee expects. A Doctorate in Philosophy (PhD or DPhil) is one of the highest academic degrees next to Masters. In order to conduct research in an area, PhD researchers require deep knowledge in their interest areas and the working experience on research problem. Our PhD doctorate thesis writing services
+                        </p>
+                        <h2>Why Us?</h2>
+                        <p>MAATHANGI has a strong foundation and ability in undertaking the research and analysis work with a network of doctorate and research guides who would assist in completion of PhD /doctorate /DBA and its related services. Our team comprised of experienced professors, young and dynamic researchers, relevant subject matter expertise, industry professionals who provide continuous support to understand the real world situation, research methodologists, data collection team (both online and offline) statistician team (including econometrician, biostatistician), developers, copy editors (including manuscript editors) and proof readers (manuscript proof readers/thesis proof readers), and formatting and referencing team.
+                        </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div className="about_maathagi_web_design">
+            <div className="about_maathagi_web_design_1">
+                <div className="about_maathagi_web_design_2">
+                    <div className="about_maathagi_web_design_3">
+                        <img src={web_design} alt="" />
+                       
+                    </div>
+                     <div className="about_maathagi_web_design_4">
+                        <h2>Personal Website</h2>
+                        </div>
+                </div>
+                 <div className="about_maathagi_web_design_2">
+                    <div className="about_maathagi_web_design_3">
+                        <img src={college_design} alt="" />
+                       
+                    </div>
+                    <div className="about_maathagi_web_design_4">
+                        <h2>College & School Website</h2>
+                        </div>
+                </div>
+                 <div className="about_maathagi_web_design_2">
+                    <div className="about_maathagi_web_design_3">
+                        <img src={industry_design} alt="" />
+                    </div>
+                    <div className="about_maathagi_web_design_4">
+                        <h2>Industrial Website</h2>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="about_maathagi_background_pic_div">
+            <div className="about_maathagi_background_pic_div_1">
+                <div className="about_maathagi_background_pic_div_2">
+                    <h2>Experience</h2>
+                    <p> Our team heads have rich experience in the field of research for more than 15 years especially in the development of questionnaire, research design, quantitative and qualitative study designs, and statistical analysis. The technical heads will guide you through your research journey and drive you to achieve your PhD completion dream. There is complete support at every stage from the identification of PHD topic to the final document.</p>
+                    <h2>PhD thesis writing services from MAATHANGI</h2>
+                    <p>MAATHANGI guide you for complete PhD doctorate thesis services such as</p>
+                </div>
+            </div>
+        </div>
+        <Footer/>
+        </>
+    )
+}
+export default Service
