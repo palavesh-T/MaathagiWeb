@@ -1,9 +1,20 @@
 import React from "react";
 import "../assete/css/footer.css";
-import { Link } from "react-router-dom";
-import footer_logo from "../assete/Logo/logo.png";
+import { Link , useNavigate } from "react-router-dom";
+import footer_logo from "../assete/Logo/logoi 1.png";
 
 const  Footer = () => {
+
+    const navigate = useNavigate();
+
+  const phd_peoposal = () => {
+    navigate("");
+    
+
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+  };
 
     return (
         <>
@@ -16,11 +27,12 @@ const  Footer = () => {
     <div className="footer-section quick-links">
       <h3>Quick Links</h3>
       <ul>
-        <li><Link to="/home">Home</Link></li>
-        <li><Link to="/home">About</Link></li>
-        <li><Link to="/home">Service</Link></li>
-        <li><Link to="/home">Research</Link></li>
-        <li><Link to="/home">Contact</Link></li>
+        <li><Link to="/Home" onClick={phd_peoposal}>Home</Link></li>
+        <li><Link to="/About" onClick={phd_peoposal}>About</Link></li>
+        <li><Link to="/Service" onClick={phd_peoposal}>Service</Link></li>
+        <li><Link to="/Privacypolicy" onClick={phd_peoposal}>Privacy Policy</Link></li>
+        <li><Link to="/Terms" onClick={phd_peoposal}>Terms & Condition</Link></li>
+          <li><Link to="/Cancellation" onClick={phd_peoposal}>Cancellation Policy</Link></li>
       </ul>
     </div>
 

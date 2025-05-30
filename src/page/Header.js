@@ -59,15 +59,17 @@ const Header = () =>{
   const navigate = useNavigate();
 
   const phd_peoposal = () => {
-    navigate("../Home");
-    navigate("../About");
-    navigate("../Service");
+    navigate("");
+    
 
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 0);
   };
   const {scrollYProgress} =useScroll()
+
+
+    
 return (
 <>
 <motion.div

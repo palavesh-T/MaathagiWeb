@@ -8,6 +8,12 @@ import Service from "./page/Service";
 import Contact from "./page/Contact";
 import Domains from "./page/Domanis";
 import Phd from "./page/Phd";
+import Privacypolicy from "./page/Privacypolicy";
+import Terms from "./page/Terms";
+import Cancellation from "./page/Cancellation";
+import Adminheader from "./Admin/Adminheader";
+import Admin from "./Admin/Admin";
+import Changepassword from "./Admin/Changepassword";
 
 function App() {
   return (
@@ -23,6 +29,12 @@ function App() {
           <Route path="/Contact" element={<Contact/>} />
           <Route path="/Domains" element={<Domains/>} />
           <Route path="/Phd"  element={<Phd/>} />
+          <Route path="/Privacypolicy" element={<Privacypolicy/>} />
+          <Route path="/Terms" element={<Terms/>} />
+          <Route path="/Cancellation" element={<Cancellation/>} />
+          <Route path="/Adminheader" element={<Adminheader/>} />
+          <Route path="/Admin" element={<Admin/>} />
+          <Route path="/Changepassword" element={<Changepassword/>} />
         </Routes>
       </HelmetProvider>
     </BrowserRouter>

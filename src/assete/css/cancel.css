@@ -1,0 +1,7 @@
+.cancellation_maathagi_div{
+      background-image: url(../images//cancellation.jpg);
+    background-size: cover;
+    background-position: calc(100%);
+    width: 100%;
+    height:90vh;
+}

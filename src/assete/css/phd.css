@@ -5,3 +5,95 @@
     width: 100%;
     height:90vh;
 }
+.maathagi_phd_div h2{
+    font-size: 35px;
+    text-align: center;
+    color: var(--themeht-secondary-color);
+}
+.maathagi_phd_div_2{
+    padding: 40px;
+}
+.maathagi_phd_div_3 h2{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+}
+.maathagi_phd_div_3 h2 a{
+    text-decoration: none;
+    color: #000;
+    font-family: calibri light;
+    display: block;
+    transition: all 0.3s ease;
+}
+/* .maathagi_phd_div_3 h2 a:hover{
+    color: #fff;
+    margin-left: 10px;
+  }
+.maathagi_phd_div_3 h2:hover{
+    color: darkblue;
+} */
+.maathagi_phd_div_3 h2 a:hover{
+    color: #fff;
+}
+.maathagi_phd_div_3 {
+    display: flex;
+    align-items: center; /* Vertically center the icon and text */
+    gap: 10px; /* Space between the icon and text */
+}
+.maathagi_phd_button {
+  display: inline-block;
+  padding: 12px 24px;
+border-style: solid;
+  color: #fff;
+
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  border-radius: 6px;
+}
+
+.maathagi_phd_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--themeht-secondary-color);
+  z-index: 0;
+  transition: width 0.4s ease;
+}
+
+.maathagi_phd_button:hover::before {
+  width: 100%;
+}
+
+.maathagi_phd_button:hover {
+  color: white;
+}
+
+.maathagi_phd_button {
+  z-index: 1;
+}
+
+.maathagi_phd_button span {
+  position: relative;
+  z-index: 2;
+}
+
+.phd_maathagi_content_div{
+    padding: 40px;
+}
+.phd_maathagi_content_div_1 h2{
+    text-align: center;
+    font-size: 40px;
+    color: var(--themeht-secondary-color);
+}
+.phd_maathagi_content_div_1 p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.9;
+}
