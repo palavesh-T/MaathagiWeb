@@ -1,19 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Admin/assete/css/admin.css";
-
+import { useNavigate } from 'react-router-dom'; 
+import { SignInApi } from "../service/Api";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; 
 
 const Admin = () => {
 
 
-     const [username, setUsername] = useState("");
+     const [user_name, setUsername] = useState("");
   const [password, setPassword] = useState("");
+   const [passwordVisible, setPasswordVisible] = useState(false);
+     const [error, setError] = useState('');
+   const navigate = useNavigate(); 
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    // Implement login logic here
-    console.log("Username:", username);
-    console.log("Password:", password);
-  };
+
+    useEffect(() => {
+        if (localStorage.getItem('user') !== null) {
+            navigate("/Admin"); 
+        }
+    }, [navigate]);
+
+    const togglePasswordVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+    };
+
+
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    try {
+            const response = await SignInApi({ user_name, password });
+
+            if (response.status === false) {
+                console.log("Login failed");
+                setError("Invalid username or password");
+            } else {
+                console.log("Login Successful");
+                localStorage.setItem('authenticated', 'true');
+                localStorage.setItem('user', user_name); 
+                navigate('/Contactdetails'); 
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            setError("Invalid password");
+        }
+    };
+
+
     return(
         <>
           <div className="admin-login-container">
@@ -22,19 +55,46 @@ const Admin = () => {
         <input
           type="text"
           placeholder="Username"
-          value={username}
+          id="user_name"
+          value={user_name}
           onChange={(e) => setUsername(e.target.value)}
           required
         />
+         <div className="form-group" style={{ position: 'relative' }}>
         <input
-          type="password"
+          type={passwordVisible ? "text" : "password"}
           placeholder="Password"
+          id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          style={{
+                            width: '100%',
+                            padding: '10px',
+                            marginBottom: '20px',
+                            border: '1px solid #ccc',
+                            borderRadius: '4px',
+                            boxSizing: 'border-box'
+                        }}
         />
-        <button type="submit">Login</button>
+         <FontAwesomeIcon
+                        icon={passwordVisible ? faEye : faEyeSlash}
+                        onClick={togglePasswordVisibility}
+                        className="icon"
+                        style={{
+                            position: 'absolute',
+                            right: '10px',
+                            top: '35%',
+                            transform: 'translateY(-50%)',
+                            cursor: 'pointer'
+                        }}
+                    />
+                    </div>
+                    {error && <div style={{ textAlign: 'center', color: 'red', marginTop: '15px' }}>{error}</div>}
+                    <br></br>
+        <button type="submit"  value="Login">Login</button>
       </form>
+       
     </div>
         </>
     )

@@ -89,3 +89,126 @@
     text-align: justify;
     font-size: 16px;
 }
+
+
+
+/* Mobile Responsive Styles for Service Section */
+@media only screen and (max-width: 1024px) {
+    .service_maathagi_div {
+        height: 70vh;
+        background-position: center;
+    }
+    
+    .maathagi_service_div_1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .maathagi_service_div_3 {
+        width: 100%;
+    }
+    
+    .about_maathagi_web_design_1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .about_maathagi_web_design_2 {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .service_maathagi_div {
+        height: 60vh;
+    }
+    
+    .maathagi_service_div_5 h2 {
+        font-size: 22px;
+    }
+    
+    .maathagi_service_div_5 p {
+        font-size: 15px;
+    }
+    
+    .about_maathagi_web_design_2 {
+        width: 100%;
+    }
+    
+    .about_maathagi_web_design_3 img {
+        height: 180px;
+    }
+    
+    .about_maathagi_background_pic_div_1 {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .service_maathagi_div {
+        height: 50vh;
+    }
+    
+    .maathagi_service_div {
+        padding: 15px;
+    }
+    
+    .maathagi_service_div_2 button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .maathagi_service_div_5 h2 {
+        font-size: 20px;
+    }
+    
+    .maathagi_service_div_5 p {
+        font-size: 14px;
+    }
+    
+    .about_maathagi_web_design {
+        padding: 15px;
+    }
+    
+    .about_maathagi_web_design_3 img {
+        height: 150px;
+    }
+    
+    .about_maathagi_web_design_4 h2 {
+        font-size: 18px;
+    }
+    
+    .about_maathagi_background_pic_div_1 {
+        padding: 20px;
+    }
+    
+    .about_maathagi_background_pic_div_2 h2 {
+        font-size: 20px;
+    }
+    
+    .about_maathagi_background_pic_div_2 p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .service_maathagi_div {
+        height: 45vh;
+    }
+    
+    .maathagi_service_div_3 {
+        padding: 0px;
+    }
+    
+    .about_maathagi_web_design_3 img {
+        height: 120px;
+    }
+    
+    .about_maathagi_background_pic_div_1 {
+        padding: 15px;
+    }
+    .maathagi_service_div_2 h2{
+    color: var( --themeht-secondary-color);
+    text-align: center;
+}
+}

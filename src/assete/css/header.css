@@ -207,15 +207,17 @@ width: 100%;
     }
   
     .header_pic img {
-      margin-left: 90px;
+      margin-left: 50px;
+      max-height: 40px;
+      margin-top: 25px;
     }
   
     .menu_icon {
       display: flex;
-      margin-top: -40px;
+      margin-top: -10px;
       background-color: darkblue;
       width: 100%;
-      gap: 65%;
+      gap: 40%;
     }
     .social_icons_div_fonts{
       display: flex;

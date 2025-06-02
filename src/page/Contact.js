@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import "../assete/css/contact.css";
 import Header from "./Header";
 import { Link } from "react-router-dom";
@@ -7,8 +7,89 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Footer from "./Footer";
+import { ContactusApi } from '../service/Api';
 
 const Contact =() =>{
+
+      const [formData, setFormData] = useState({
+    user_name: '',
+    user_phone: '',
+    user_email: '',
+    service_type: '',
+    user_message: '',
+  });
+  
+  const [errorMessage, setErrorMessage] = useState({});
+  const [successMessage, setSuccessMessage] = useState('');
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+  
+
+  const handleSubmit = async () => {
+    let errors = {};
+  
+    // Validation for all fields
+    if (!/^[A-Za-z\s]+$/.test(formData.user_name.trim())) {
+      errors.user_name = 'Enter your Name';
+    }
+  
+    if (!/^[0-9]{10}$/.test(formData.user_phone.trim())) {
+      errors.user_phone = 'Phone number must be 10 digits.';
+    }
+  
+    if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(formData.user_email.trim())) {
+      errors.user_email = 'Enter a valid email address.';
+    }
+  
+    if (formData.service_type.trim() === '' || formData.service_type === 'select*') {
+      errors.service_type = 'Please select a service type.';
+    }
+  
+    if (formData.user_message.trim() === '') {
+      errors.user_message = 'Message cannot be empty.';
+    }
+  
+    // If errors exist, display them and stop submission
+    if (Object.keys(errors).length > 0) {
+      setErrorMessage(errors);
+      setTimeout(() => {
+        setErrorMessage(''); // Clear error messages after 5 seconds
+      }, 2000);
+      return;
+    }
+  
+    try {
+      setErrorMessage('');
+         const submissionDate = new Date().toISOString();
+    
+    // Create form data with submission date
+    const formDataWithDate = {
+      ...formData,
+      submission_date: submissionDate
+    };
+      const response = await ContactusApi(formDataWithDate);
+      console.log('Form data saved:', response.data);
+  
+      setSuccessMessage(' submitted successfully!');
+      setFormData({
+        user_name: '',
+        user_phone: '',
+        user_email: '',
+        service_type: '',
+        user_message: '',
+      });
+  
+      setTimeout(() => {
+        setSuccessMessage('');
+      }, 2000);
+    } catch (error) {
+      console.error('Error saving form data:', error);
+      setErrorMessage('Failed to submit the form. Please try again.');
+    }
+  };
+  
 
     return(
         <>
@@ -46,19 +127,22 @@ const Contact =() =>{
                     <div className="maathagi_contact_input_divs_1">
                         <div className="maathagi_contact_input_divs_2">
                             <div className="maathagi_contact_input_divs_3">
-                                <input type="text" placeholder="Name" />
+                                <input type="text" placeholder="Name" id="user_name" value={formData.user_name} onChange={handleChange} autoComplete='off' />
+                                 {errorMessage.user_name && <div className="error-message" style={{ color: 'red',fontSize:"10px" }}>{errorMessage.user_name}</div>}
                             </div>
                              <div className="maathagi_contact_input_divs_3">
-                                <input type="text" placeholder="Phone" />
+                                <input type="text" placeholder="Phone" id="user_phone" value={formData.user_phone} onChange={handleChange} />
+                                 {errorMessage.user_phone && <div className="error-message" style={{ color: 'red',fontSize:"10px" }}>{errorMessage.user_phone}</div>}
                             </div>
                         </div>
                          <div className="maathagi_contact_input_divs_2">
                             <div className="maathagi_contact_input_divs_3">
-                                <input type="text" placeholder="Email" />
+                                <input type="text" placeholder="Email" id="user_email" value={formData.user_email} onChange={handleChange} autoComplete='off' />
+                                {errorMessage.user_email && <div className="error-message" style={{ color: 'red',fontSize:"10px" }}>{errorMessage.user_email}</div>}
                             </div>
                              <div className="maathagi_contact_input_divs_3">
-                               <select>
-                                <option>select</option>
+                               <select  id="service_type" onChange={handleChange} autoComplete='off'>
+                                <option id="service_type" value={formData.service_type} autoComplete='off'>select</option>
                                 <option value="Research Proposal">Research Proposal</option>
                                 <option value="Research Paper">Research Paper</option>
                                 <option value="Implementation">Implementation</option>
@@ -71,13 +155,16 @@ const Contact =() =>{
                                 <option value="Employee Payroll">Employee Payroll</option>
                                 <option value="other">Other</option>
                                </select>
+                               {errorMessage.service_type && <div className="error-message" style={{ color: 'red',fontSize:"10px" }}>{errorMessage.service_type}</div>}
                             </div>
                         </div>
                         <div className="maathagi_contact_textarea_div">
-                            <textarea></textarea>
+                            <textarea id='user_message' value={formData.user_message} onChange={handleChange}></textarea>
+                            {errorMessage.user_message && <div className="error-message" style={{ color: 'red',fontSize:"10px" }}>{errorMessage.user_message}</div>}
                         </div>
                         <div className="maathagi_contact_button">
-                            <button>SUBMIT</button>
+                            <button onClick={handleSubmit} >SUBMIT</button>
+                             {successMessage && <div className="success-message" style={{ color: '#fff' }}>{successMessage}</div>}
                         </div>
                     </div>
                 </div>

@@ -97,3 +97,113 @@ border-style: solid;
     text-align: justify;
     line-height: 1.9;
 }
+
+/* Mobile Responsive Styles for PhD Section */
+@media only screen and (max-width: 1024px) {
+    .phd_maathagi_div {
+        height: 70vh;
+        background-position: center;
+    }
+    
+    .maathagi_phd_div_2,
+    .phd_maathagi_content_div {
+        padding: 30px;
+    }
+    
+    .maathagi_phd_div h2,
+    .phd_maathagi_content_div_1 h2 {
+        font-size: 32px;
+    }
+    
+    .maathagi_phd_div_3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .phd_maathagi_div {
+        height: 60vh;
+    }
+    
+    .maathagi_phd_div_2,
+    .phd_maathagi_content_div {
+        padding: 25px;
+    }
+    
+    .maathagi_phd_div h2,
+    .phd_maathagi_content_div_1 h2 {
+        font-size: 28px;
+    }
+    
+    .maathagi_phd_div_3 h2 {
+        font-size: 18px;
+    }
+    
+    .phd_maathagi_content_div_1 p {
+        font-size: 15px;
+    }
+    
+    .maathagi_phd_button {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .phd_maathagi_div {
+        height: 50vh;
+    }
+    
+    .maathagi_phd_div_2,
+    .phd_maathagi_content_div {
+        padding: 20px;
+    }
+    
+    .maathagi_phd_div h2,
+    .phd_maathagi_content_div_1 h2 {
+        font-size: 24px;
+    }
+    
+    .maathagi_phd_div_3 {
+        gap: 8px;
+    }
+    
+    .maathagi_phd_div_3 h2 {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .phd_maathagi_content_div_1 p {
+        font-size: 14px;
+    }
+    
+    .maathagi_phd_button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .phd_maathagi_div {
+        height: 45vh;
+    }
+    
+    .maathagi_phd_div_2,
+    .phd_maathagi_content_div {
+        padding: 15px;
+    }
+    
+    .maathagi_phd_div h2,
+    .phd_maathagi_content_div_1 h2 {
+        font-size: 22px;
+    }
+    
+    .maathagi_phd_div_3 h2 {
+        font-size: 15px;
+    }
+    
+    .phd_maathagi_content_div_1 p {
+        line-height: 1.7;
+    }
+}

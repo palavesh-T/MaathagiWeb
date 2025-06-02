@@ -314,3 +314,184 @@ position: relative;
   line-height: 1.9;
   text-align: center;
 }
+
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 1024px) {
+    .home_div_add_pic {
+        height: 80vh;
+    }
+    
+    .homer_cont_divs_over {
+        top: 25%;
+        left: 5%;
+    }
+    
+    .homer_cont_divs_over h1 {
+        font-size: 40px;
+    }
+    
+    .homer_cont_divs_over p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+    
+    .maathangi_home_div_1 {
+        flex-direction: column;
+    }
+    
+    .maathangi_home_div_2 {
+        width: 100%;
+    }
+    
+    .maathagi_old_design_inpt_3 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .maathagi_new_dign_sub_card_1 {
+        flex-direction: column;
+    }
+    
+    .maathagi_new_card_design_back_clr_2 {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home_div_add_pic {
+        height: 70vh;
+        background-position: 75% center;
+    }
+    
+    .homer_cont_divs_over {
+        top: 20%;
+        left: 5%;
+    }
+    
+    .homer_cont_divs_over h1 {
+        font-size: 32px;
+        margin: 5px 0 15px;
+    }
+    
+    .homer_cont_divs_over small {
+        font-size: 20px;
+    }
+    
+    .homer_cont_divs_over p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    
+    .hm_bnts button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+    .maathagi_new_text_design_1 h1 {
+        font-size: 60px;
+    }
+    
+    .maathagi_new_dign_sub_card_2 h1 {
+        font-size: 32px;
+    }
+    
+    .maathagi_new_dign_sub_card_2 h2 {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+    
+    .maathagi_new_icon_add_1 h4 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home_div_add_pic {
+        height: 70vh;
+    }
+    
+    .homer_cont_divs_over { 
+        top: 35%;
+        left: 5%;
+    }
+    
+    .homer_cont_divs_over h1 {
+        font-size: 28px;
+    }
+    
+    .homer_cont_divs_over small {
+        font-size: 18px;
+    }
+    
+    .homer_cont_divs_over h2 {
+        font-size: 16px;
+    }
+    
+    .maathagi_new_text_design_1 h1 {
+        font-size: 40px;
+    }
+    
+    .maathagi_new_text_design::before,
+    .maathagi_new_text_design::after {
+        width: 40px;
+    }
+    
+    .maathagi_old_design_inpt_3 {
+        padding: 10px;
+    }
+    
+    .maathagi_old_design_inpt_4_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .custom-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .maathagi_new_dign_sub_card_2 h1 {
+        font-size: 28px;
+    }
+    
+    .maathagi_new_card_design_back_clr_1 h3 {
+        font-size: 20px;
+    }
+    
+    .phd_good_proposal_tips h2 {
+        font-size: 20px;
+    }
+}
+
+/* Special adjustments for very small devices */
+@media only screen and (max-width: 360px) {
+    .homer_cont_divs_over h1 {
+        font-size: 15px;
+    }
+    
+    .homer_cont_divs_over p {
+        font-size: 14px;
+    }
+    
+    .hm_bnts button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .maathagi_new_text_design_1 h1 {
+        font-size: 32px;
+    }
+    .maathagi_new_dign_sub_card_4 img{
+      width: 100%;
+    }
+    .maathangi_home_div_4 p{
+   text-align: justify;
+    line-height: 1.7;
+     font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+}

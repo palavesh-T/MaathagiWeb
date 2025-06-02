@@ -12,6 +12,7 @@ const Adminheader = () =>{
         <img src={adminlogo} alt="Logo" className="admin-logo" />
       </div>
       <div className="admin-header-right">
+          <Link to="/Contactdetails" className="admin-menu">Contact Details</Link>
         <Link to="/Changepassword" className="admin-menu">Change Password</Link>
         <Link to="/Admin" className="admin-menu">Logout</Link>
       </div>

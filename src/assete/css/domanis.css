@@ -37,3 +37,93 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
   margin-bottom: 12px;
   color: #333;
 }
+
+
+
+/* Mobile Responsive Styles for Domain Section */
+@media only screen and (max-width: 1024px) {
+    .domain_maathagi_div {
+        height: 70vh;
+        background-position: center;
+    }
+    
+    .maathagi_domain_main_div {
+        padding: 30px;
+    }
+    
+    .maathagi_domain_main_div_1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .maathagi_domain_main_div_2 {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .domain_maathagi_div {
+        height: 60vh;
+    }
+    
+    .maathagi_domain_main_div {
+        padding: 25px;
+    }
+    
+    .maathagi_domain_main_div_2 {
+        width: 100%;
+    }
+    
+    .maathagi_domain_main_div_3 h2 {
+        font-size: 17px;
+    }
+    
+    .maathagi_domain_main_div_4 h1 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .domain_maathagi_div {
+        height: 50vh;
+    }
+    
+    .maathagi_domain_main_div {
+        padding: 20px;
+    }
+    
+    .maathagi_domain_main_div_1 {
+        gap: 15px;
+    }
+    
+    .maathagi_domain_main_div_3 h2 {
+        font-size: 16px;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .maathagi_domain_main_div_4 h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .domain_maathagi_div {
+        height: 45vh;
+    }
+    
+    .maathagi_domain_main_div {
+        padding: 15px;
+    }
+    
+    .maathagi_domain_main_div_2 {
+        padding: 15px;
+    }
+    
+    .maathagi_domain_main_div_3 h2 {
+        font-size: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

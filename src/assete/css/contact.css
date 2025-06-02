@@ -104,3 +104,160 @@ margin-left: 45%;
     text-decoration: none;
     color: #000;
 }
+
+
+
+/* Mobile Responsive Styles for Contact Section */
+@media only screen and (max-width: 1024px) {
+    .contact_maathagi_div {
+        height: 70vh;
+        background-position: center;
+    }
+    
+    .maathagi_contact_div_1 {
+        flex-direction: column;
+        padding: 30px;
+        gap: 40px;
+    }
+    
+    .maathagi_contact_div_2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .maathagi_contact_div_2 h2 {
+        font-size: 45px;
+    }
+    
+    .maathagi_contact_div_3 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .maathagi_contact_input_divs_1 {
+        width: 100%;
+    }
+    
+    .maathagi_contact_input_divs_3 select {
+        width: 100%;
+    }
+    
+    .maathagi_contact_card_div {
+        padding: 30px;
+    }
+    
+    .maathagi_contact_card_div_3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact_maathagi_div {
+        height: 60vh;
+    }
+    
+    .maathagi_contact_div_1 {
+        padding: 25px;
+    }
+    
+    .maathagi_contact_div_2 h2 {
+        font-size: 38px;
+    }
+    
+    .maathagi_contact_div_2 p {
+        margin-top: -20px;
+    }
+    
+    .maathagi_contact_input_divs_2 {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .maathagi_contact_textarea_div {
+        margin-top: 20px;
+    }
+    
+   
+    
+    .maathagi_contact_card_div_4 {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact_maathagi_div {
+        height: 50vh;
+    }
+    
+    .maathagi_contact_div_1 {
+        padding: 20px;
+    }
+    
+    .maathagi_contact_div_2 h2 {
+        font-size: 32px;
+    }
+    
+    .maathagi_contact_input_divs_1 {
+        padding: 5px;
+    }
+    
+    .maathagi_contact_input_divs_3 input,
+    .maathagi_contact_textarea_div textarea,
+    .maathagi_contact_input_divs_3 select {
+        padding: 12px 15px;
+    }
+    
+    .maathagi_contact_textarea_div textarea {
+        height: 120px;
+    }
+    
+    .maathagi_contact_button button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .maathagi_contact_card_div {
+        padding: 20px;
+    }
+    
+    .maathagi_contact_card_div_3 {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .contact_maathagi_div {
+        height: 45vh;
+    }
+    
+    .maathagi_contact_div_2 h2 {
+        font-size: 28px;
+    }
+    
+    .maathagi_contact_div_2 p {
+        font-size: 14px;
+        margin-top: -15px;
+    }
+    
+    .maathagi_contact_input_divs_3 input,
+    .maathagi_contact_textarea_div textarea
+    {
+        padding: 10px 12px;
+        width: 91%;
+    }
+     .maathagi_contact_input_divs_3 select{
+          padding: 10px 12px;
+        width: 100%;
+     }
+    
+    .maathagi_contact_div_4 a {
+        font-size: 14px;
+    }
+    
+    .phone-icon {
+        font-size: 22px;
+    }
+}
