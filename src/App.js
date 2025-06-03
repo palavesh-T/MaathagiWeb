@@ -16,6 +16,7 @@ import Admin from "./Admin/Admin";
 import Changepassword from "./Admin/Changepassword";
 import Contactdetails from "./Admin/Contactdetails";
 import Adminfooter from "./Admin/Adminfooter";
+import Softwaredevelopment from "./page/Softwaredevelopment";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="Privacypolicy" element={<Privacypolicy/>} />
           <Route path="Terms" element={<Terms/>} />
           <Route path="Cancellation" element={<Cancellation/>} />
+          <Route path="Softwaredevelopment" element={<Softwaredevelopment/>} />
           <Route path="Adminheader" element={<Adminheader/>} />
           <Route path="Admin" element={<Admin/>} />
           <Route path="Changepassword" element={<Changepassword/>} />

@@ -131,6 +131,7 @@ return (
           <li><Link to="/Service" onClick={phd_peoposal}>SERVICE</Link></li>
            <li><Link to="/Domains" onClick={phd_peoposal}>DOMAINS</Link></li>
            <li><Link to="/Phd" onClick={phd_peoposal}>PHD</Link></li>
+            <li><Link to="/Softwaredevelopment" onClick={phd_peoposal}>SOFTWARE DEVELOPMENT</Link></li>
           {/* <li onMouseEnter={!isMobile ? () => toggleDropdown('phd') : null} onMouseLeave={!isMobile ? () => toggleDropdown(null) : null} onClick={isMobile ? (e) => { e.stopPropagation(); toggleDropdown('phd'); } : null}>
               <Link to="#">Research Service <span className="arrow">&#9662;</span></Link>
               <div className={`dropdown-content ${dropdownOpen === 'phd' ? 'open' : ''}`}>
