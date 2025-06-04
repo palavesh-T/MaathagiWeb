@@ -212,3 +212,238 @@
     text-align: center;
 }
 }
+.service_maathagi_new_design_div{
+    padding: 20px;
+}
+.service_maathagi_new_design_div_1{
+    display: flex;
+    gap: 20px;
+}
+.service_maathagi_new_design_div_2 h2{
+    font-size: 27px;
+}
+.service_maathagi_new_design_div_2{
+    width: 25%;
+}
+.service_maathagi_new_design_div_3{
+    width: 50%;
+}
+
+  .service_maathagi_new_design_div_4 button{
+    margin-top: 35px;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: skyblue;
+    border-radius: 6px;
+    border:none;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  .service_maathagi_new_design_div_4 button:hover{
+    background-color: darkblue;
+    color: #fff;
+  }
+
+  /* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .service_maathagi_new_design_div {
+        padding: 15px;
+    }
+    
+    .service_maathagi_new_design_div_1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .service_maathagi_new_design_div_2,
+    .service_maathagi_new_design_div_3 {
+        width: 100%;
+    }
+    
+    .service_maathagi_new_design_div_2 h2 {
+        font-size: 22px;
+    }
+    
+    .service_maathagi_new_design_div_4 button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Optional: For very small screens */
+@media only screen and (max-width: 480px) {
+    .service_maathagi_new_design_div {
+        padding: 10px;
+    }
+    
+    .service_maathagi_new_design_div_2 h2 {
+        font-size: 20px;
+    }
+    
+    .service_maathagi_new_design_div_4 button {
+        padding: 10px 20px;
+    }
+}
+.maathagi_new_design_project{
+    padding: 20px;
+}
+.consult-icon {
+  width: 50px;
+  height: 50px;
+color: #2d4a8a;
+margin-top: 40px;
+}
+
+.maathagi_new_design_project_1{
+    display: flex;
+    gap: 20px;
+}
+.maathagi_new_design_project_2{
+    display: flex;
+    gap: 10px;
+}
+.maathagi_new_design_project_4 h2{
+    font-size: 19px;
+    line-height: 29px;
+}
+.maathagi_new_design_project_4 p{
+    font-family: "Poppins", Tahoma, Geneva, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6e6e6e;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .maathagi_new_design_project {
+        padding: 15px;
+    }
+    
+    .maathagi_new_design_project_1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .maathagi_new_design_project_2 {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .consult-icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+    }
+    
+    .maathagi_new_design_project_4 h2 {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .maathagi_new_design_project_4 p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/* For very small screens (up to 480px) */
+@media only screen and (max-width: 480px) {
+    .maathagi_new_design_project {
+        padding: 10px;
+    }
+    
+    .maathagi_new_design_project_4 h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .maathagi_new_design_project_4 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .consult-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+.new_service_maathagi_div{
+    padding: 20px;
+}
+.new_service_maathagi_div_2 img{
+    width: 100%;
+}
+.new_service_maathagi_div_1 h2{
+    font-size: 20px;
+    line-height: 29px;
+}
+.new_service_maathagi_div_1 p{
+    font-family: "Poppins", Tahoma, Geneva, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6e6e6e;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .new_service_maathagi_div {
+        padding: 15px;
+    }
+    
+    .new_service_maathagi_div_1 h2 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    
+    .new_service_maathagi_div_1 p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    /* If you have a flex/grid layout between div_1 and div_2 */
+    .new_service_maathagi_flex_container {
+        flex-direction: column;
+    }
+    
+    .new_service_maathagi_div_2 {
+        margin-top: 20px;
+    }
+}
+
+/* For very small screens (up to 480px) */
+@media only screen and (max-width: 480px) {
+    .new_service_maathagi_div {
+        padding: 12px;
+    }
+    
+    .new_service_maathagi_div_1 h2 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    
+    .new_service_maathagi_div_1 p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .new_service_maathagi_div_2 img {
+        margin-top: 15px;
+    }
+}
+
+/* Optional: Adjustments for landscape mobile view */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .new_service_maathagi_div_1 h2 {
+        font-size: 17px;
+    }
+    
+    .new_service_maathagi_div_1 p {
+        font-size: 14px;
+    }
+}

@@ -6,6 +6,8 @@ import web_design from "../assete/about/website design.jpg";
 import college_design from "../assete/about/college website.jpg";
 import industry_design from "../assete/about/industry.jpg";
 import Footer from "./Footer";
+import { FaUsers,FaHandshake, FaPiggyBank  } from "react-icons/fa";
+import service_pic_2 from "../assete/images/service pic 2.jpg";
 
 const Service = () =>{
 
@@ -13,6 +15,20 @@ const Service = () =>{
         <>
         <Header/>
         <div className="service_maathagi_div"></div>
+
+        <div className="service_maathagi_new_design_div">
+            <div className="service_maathagi_new_design_div_1">
+                <div className="service_maathagi_new_design_div_2">
+                    <h2>High-Quality Work Experiences</h2>
+                </div>
+                <div className="service_maathagi_new_design_div_3">
+                    <p>Welcome to Sea Sense Research, where we empower scholars with expert support and guidance. Our services include research proposal development, literature review assistance, data analysis, manuscript preparation and academic coaching.</p>
+                </div>
+                <div className="service_maathagi_new_design_div_4">
+                    <button>Contact</button>
+                    </div>
+            </div>
+        </div>
 
         <div className="maathagi_service_div">
             <div className="maathagi_service_div_1">
@@ -73,6 +89,51 @@ const Service = () =>{
                         <h2>Industrial Website</h2>
                         </div>
                 </div>
+            </div>
+        </div>
+
+        <div className="maathagi_new_design_project">
+            <div className="maathagi_new_design_project_1">
+                <div className="maathagi_new_design_project_2">
+                    <div className="maathagi_new_design_project_3">
+                       <FaUsers  className="consult-icon" />
+                    </div>
+                    <div className="maathagi_new_design_project_4">
+                        <h2>Expert Team</h2>
+                        <p>Our team comprises industry professionals with years of experience.
+We bring deep technical knowledge and creative problem-solving.</p>
+                    </div>
+                </div>
+                <div className="maathagi_new_design_project_2">
+                    <div className="maathagi_new_design_project_3">
+                     < FaHandshake className="consult-icon" />
+                    </div>
+                    <div className="maathagi_new_design_project_4">
+                        <h2>Free Consultation</h2>
+                        <p>We offer a no-obligation consultation to understand your needs.
+Speak directly with our experts to explore the best solutions.</p>
+                    </div>
+                </div>
+                <div className="maathagi_new_design_project_2">
+                    <div className="maathagi_new_design_project_3">
+                      <FaPiggyBank  className="consult-icon"/>
+                    </div>
+                    <div className="maathagi_new_design_project_4">
+                        <h2>Lowest Cost</h2>
+                        <p>We deliver high-quality services at the most competitive prices.
+Our streamlined processes help reduce unnecessary expenses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="new_service_maathagi_div">
+            <div className="new_service_maathagi_div_1">
+                <h2>Project Result & Benefits of Project</h2>
+                <p>Our project delivers measurable results aligned with your goals.Experience improved efficiency, performance, and outcomes.Custom solutions ensure lasting value beyond implementation.We focus on both immediate impact and long-term gains.Your success is the ultimate benefit of our work.</p>
+            </div>
+            <div className="new_service_maathagi_div_2">
+                <img src={service_pic_2} alt=""/>
             </div>
         </div>
 
