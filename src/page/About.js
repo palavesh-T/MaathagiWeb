@@ -1,4 +1,5 @@
 import React from "react";
+import MetaTitle from '../components/MetaTittle';
 import Header from "./Header";
 import "../assete/css/about.css";
 import about_maathagi from "../assete/SVG/badge-check.svg";
@@ -8,10 +9,23 @@ import high_abot from "../assete/about/inovation.png";
 import user_abt from "../assete/about/intraction (1).png";
 import add_ab_pic_2 from "../assete/about/16.jpg";
 import Footer from "./Footer";
+import about_pic_4 from "../assete/images/it solution.jpg";
+import gallry_1 from "../assete/images/1.jpg";
+import gallry_2 from "../assete/images/2.jpg";
+import gallry_3 from "../assete/images/3.jpg";
+import gallry_4 from "../assete/images/4.jpg";
+import gallry_5 from "../assete/images/5.jpg";
+import gallry_6 from "../assete/images/6.jpg";
+import gallry_7 from "../assete/images/7.jpg";
+import gallry_8 from "../assete/images/8.jpg";
+import gallry_9 from "../assete/images/9.jpg";
+import { FaLightbulb   } from "react-icons/fa";
 const About = () =>{
 
     return(
         <>
+            <MetaTitle title={"About | "} />
+              <meta name="description" content="MAATHANGI provides research guidance, thesis writing, and software development services in Marthandam, Tamil Nadu. Specializing in PhD assistance and software solutions." />
         <Header/>
             <div className="maathagi_about_div">
 
@@ -97,6 +111,53 @@ const About = () =>{
             </div>
         </div>
 
+        <div className="about_maathagi_new_design_glly">
+                <div className="about_maathagi_new_design_glly_2">
+                    <img src={about_pic_4} alt="" />
+                    <h2>Best IT Solution Technology</h2>
+                    <p>Best IT Solution Technology refers to innovative and efficient digital tools, platforms, and services that solve complex business problems. It integrates software development, cloud computing, cybersecurity, and AI-powered systems. These solutions streamline operations, boost productivity, and support digital transformation. Companies rely on them to stay competitive and scalable in the evolving tech landscape. At Maathangi, we offer the most trusted, customized IT solutions tailored to your goals.</p>
+                </div>
+            </div>
+    <div className="maathagi_gallery_div">
+        <div className="maathagi_gallery_div_4">
+        <div className="maathagi_gallery_div_1">
+            <div className="maathagi_gallery_div_2">
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_1} alt="" />
+                </div>
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_2} alt="" />
+                </div>
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_3} alt="" />
+                </div>  
+            </div>
+             <div className="maathagi_gallery_div_2">
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_4} alt="" />
+                </div>
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_5} alt="" />
+                </div>
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_6} alt="" />
+                </div>  
+            </div>
+             <div className="maathagi_gallery_div_2">
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_7} alt="" />
+                </div>
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_8} alt="" />
+                </div>
+                <div className="maathagi_gallery_div_3">
+                    <img src={gallry_9} alt="" />
+                </div>  
+            </div>
+        </div>
+        </div>
+    </div>
+
         <div className="about_maathagi_card_div">
             <div className="about_maathagi_card_div_1">
                  <div className="about_maathagi_card_div_2">
@@ -110,9 +171,9 @@ const About = () =>{
                     <div className="about_maathagi_card_div_3">
                     <h2>OUR MISSION</h2>
                     <p>Our roadmap starts with our mission. It declares our purpose as a company and serves as the standard against which we weigh our actions and decisions.</p>
-                    <p>To create value and make a difference</p>
-                    <p>To inspire those who we connect with</p>
-                    <p>To provide an undeniable customer service experience</p>
+                    <p><FaLightbulb   className="mission-icon" />To create value and make a difference</p>
+                    <p><FaLightbulb   className="mission-icon" />To inspire those who we connect with</p>
+                    <p><FaLightbulb   className="mission-icon" />To provide an undeniable customer service experience</p>
                 </div>
                 
             </div>
@@ -121,9 +182,9 @@ const About = () =>{
                     <div className="about_maathagi_card_div_3">
                     <h2>OUR VALUES</h2>
                     <p>Our values serve as a compass for our actions and validate how we operate as people and a company.The ability to own a vision and the fortitude to execute that vision.</p>
-                    <p>To leverage our collective intellect</p>
-                    <p>Being committed inside and out</p>
-                    <p>What we do, we do well</p>
+                    <p> <FaLightbulb   className="mission-icon" />To leverage our collective intellect</p>
+                    <p> <FaLightbulb   className="mission-icon" />Being committed inside and out</p>
+                    <p> <FaLightbulb   className="mission-icon" />What we do, we do well</p>
                 </div>
                 
             </div>

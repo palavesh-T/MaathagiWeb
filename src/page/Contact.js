@@ -8,6 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Footer from "./Footer";
 import { ContactusApi } from '../service/Api';
+import MetaTitle from '../components/MetaTittle';
 
 const Contact =() =>{
 
@@ -94,6 +95,8 @@ const Contact =() =>{
     return(
         <>
         <Header/>
+          <MetaTitle title={"Contact | "} />
+                      <meta name="description" content="MAATHANGI provides research guidance, thesis writing, and software development services in Marthandam, Tamil Nadu. Specializing in PhD assistance and software solutions." />
         <div className="contact_maathagi_div"></div>
 
         <div className="maathagi_contact_div">

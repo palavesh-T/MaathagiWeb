@@ -18,6 +18,7 @@ const  Footer = () => {
 
     return (
         <>
+   
         <footer className="footer">
   <div className="footer-container">
     <div className="footer-section logo-section">
@@ -38,9 +39,9 @@ const  Footer = () => {
 
     <div className="footer-section contact-details">
       <h3>Company Info</h3>
-      <p>Sea Sense Interdisciplinary Research and IT Solution (OPC) Pvt. Ltd.</p>
-      <p>JJ Arcade, 2nd Floor, Near New Bus Stand,<br />Marthandam - Kanyakumari District, Tamil Nadu - 629165</p>
-      <p>Email: info@seasense.in</p>
+      <p>Maathangi info Research & IT Solution</p>
+      <p>JJ Arcade, 1nd Floor, Near New Bus Stand,<br />Marthandam - Kanyakumari District, Tamil Nadu - 629165</p>
+      <p>Email: info@Maathangi.in</p>
       <p>Phone: +91 98765 43210</p>
     </div>
   </div>

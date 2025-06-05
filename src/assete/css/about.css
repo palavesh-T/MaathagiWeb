@@ -134,6 +134,14 @@ margin-top: 0px;
     font-weight: 400;
     line-height: 1.9;
     text-align: justify;
+     display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.mission-icon {
+  color: darkblue; /* Green check */
+  min-width: 20px;
+  margin-top: 5px;
 }
 .about_maathagi_card_div_3 h2{
     font-size: 25px;
@@ -246,4 +254,69 @@ margin-top: 0px;
     .maathagi_about_div_6 h1 {
         font-size: 22px;
     }
+}
+.about_maathagi_new_design_glly{
+    padding: 20px;
+}
+.about_maathagi_new_design_glly_2 img{
+    width: 100%;
+}
+.about_maathagi_new_design_glly_2 p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.9;
+}
+.maathagi_gallery_div_2{
+    display: flex;
+    gap: 20px;
+}
+.maathagi_gallery_div_3 img{
+    width: 100%;
+    height: 100%;
+}
+.maathagi_gallery_div_1{
+    display: grid;
+    gap: 10px;
+}
+.maathagi_gallery_div{
+    padding: 50px;
+}
+.maathagi_gallery_div_4{
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .about_maathagi_new_design_glly {
+    padding: 10px;
+  }
+
+  .about_maathagi_new_design_glly_2 p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .maathagi_gallery_div {
+    padding: 20px;
+  }
+
+  .maathagi_gallery_div_2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .maathagi_gallery_div_1 {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 10px;
+  }
+
+  .maathagi_gallery_div_3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .maathagi_gallery_div_4 {
+    padding: 15px;
+  }
 }

@@ -3,7 +3,7 @@ import "../assete/css/phd.css";
 import Header from "./Header";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-
+import MetaTitle from '../components/MetaTittle';
 
 
 
@@ -11,6 +11,8 @@ const Phd = () =>{
 
     return(
         <>
+          <MetaTitle title={"PHD | "} />
+                      <meta name="description" content="MAATHANGI provides research guidance, thesis writing, and software development services in Marthandam, Tamil Nadu. Specializing in PhD assistance and software solutions." />
         <Header/>
         <div className="phd_maathagi_div"></div>
            <div className="maathagi_phd_div">

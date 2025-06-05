@@ -1,4 +1,5 @@
 import React from "react";
+import MetaTitle from '../components/MetaTittle';
 import Header from "./Header";
 import "../assete/css/service.css";
 import { Link } from "react-router-dom";
@@ -13,6 +14,8 @@ const Service = () =>{
 
     return(
         <>
+          <MetaTitle title={"Service | "} />
+                      <meta name="description" content="MAATHANGI provides research guidance, thesis writing, and software development services in Marthandam, Tamil Nadu. Specializing in PhD assistance and software solutions." />
         <Header/>
         <div className="service_maathagi_div"></div>
 

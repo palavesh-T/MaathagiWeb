@@ -1,5 +1,6 @@
 import React from "react";
 import "../assete/css/domanis.css";
+import MetaTitle from '../components/MetaTittle';
 import Header from "./Header";
 import {  FaRobot, FaSignal, FaVolumeUp, FaAndroid } from 'react-icons/fa';
 import { FaDatabase, FaFingerprint, FaBug, FaCloud } from 'react-icons/fa';
@@ -18,6 +19,8 @@ const Domains = () =>{
 
 return(
     <>
+      <MetaTitle title={"Domains | "} />
+                  <meta name="description" content="MAATHANGI provides research guidance, thesis writing, and software development services in Marthandam, Tamil Nadu. Specializing in PhD assistance and software solutions." />
     <Header/>
 
     <div className="domain_maathagi_div"></div>

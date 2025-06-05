@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import MetaTitle from '../components/MetaTittle';
 import "../assete/css/home.css";
 import Header from "./Header";
 import maathagi_1 from "../assete/homepage/maathagi 1.png";
@@ -26,6 +27,8 @@ const Home = () => {
 
     return(
         <>
+          <MetaTitle title=" " />
+      <meta name="description" content="MAATHANGI provides research guidance, thesis writing, and software development services in Marthandam, Tamil Nadu. Specializing in PhD assistance and software solutions." />
         <Header/>
          <div className='home_div_main'>
         <div className='home_div_add_pic'>

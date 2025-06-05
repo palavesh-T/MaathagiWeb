@@ -57,7 +57,14 @@
     font-size: 1.1em;
     transition: all 0.3s ease;
 }
-
+.software_maathagi_main_div_2 h2:hover .feature-icon {
+    color: #1a237e;
+    transform: scale(1.1);
+}
+.software_maathagi_main_div_3 h2:hover .feature-icon {
+    color: #1a237e;
+    transform: scale(1.1);
+}
 .software_maathagi_main_div_2 h2:hover .service-icon {
     color: #1a237e;
     transform: scale(1.1);

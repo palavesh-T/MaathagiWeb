@@ -6,12 +6,14 @@ import { FaLock, FaSearch, FaServer, FaUserShield, FaDatabase, FaMapMarkedAlt,Fa
   import {FaVideo,FaCode,FaSearchDollar,FaPhoneAlt,FaEnvelope,FaMapMarkerAlt,FaFileAlt,FaMobileAlt,FaSchool,FaSitemap,FaShoppingCart,FaUserClock} from 'react-icons/fa';
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-
+import MetaTitle from '../components/MetaTittle';
 
 const Softwaredevelopment = () =>{
 
     return(
         <>
+          <MetaTitle title={"Software development | "} />
+                      <meta name="description" content="MAATHANGI provides research guidance, thesis writing, and software development services in Marthandam, Tamil Nadu. Specializing in PhD assistance and software solutions." />
         <Header/>
         <div className="maathagi_software_div"></div>
         <div className="software_maathagi_div">

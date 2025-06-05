@@ -94,11 +94,11 @@ return (
        
           <h2>Address <FontAwesomeIcon icon={faMapMarkerAlt} className='location_icon' /></h2>
           
-          <p>JJ Arcade, Second Floor, Near New Bus Stand, Marthandam, Tamil Nadu.</p>
+          <p>JJ Arcade, First Floor, Near New Bus Stand, Marthandam, Tamil Nadu.</p>
         </div>
         <div className='addres_add email_chg_div'>
           <h2>Email <FontAwesomeIcon icon={faEnvelope} /></h2>
-          <p>info@seasensesoftwares.com</p>
+          <p>info@maathangiinfo.com</p>
         </div>
         <div className='mb_di_fa_ic'>
         <div className='menu_icon' onClick={toggleMenu}>
@@ -130,7 +130,7 @@ return (
           <li><Link to="/About" onClick={phd_peoposal}>ABOUT</Link></li>
           <li><Link to="/Service" onClick={phd_peoposal}>SERVICE</Link></li>
            <li><Link to="/Domains" onClick={phd_peoposal}>DOMAINS</Link></li>
-           <li><Link to="/Phd" onClick={phd_peoposal}>PHD</Link></li>
+           <li><Link to="/Phd" onClick={phd_peoposal}>PHD SERVICE</Link></li>
             <li><Link to="/Softwaredevelopment" onClick={phd_peoposal}>SOFTWARE DEVELOPMENT</Link></li>
           {/* <li onMouseEnter={!isMobile ? () => toggleDropdown('phd') : null} onMouseLeave={!isMobile ? () => toggleDropdown(null) : null} onClick={isMobile ? (e) => { e.stopPropagation(); toggleDropdown('phd'); } : null}>
               <Link to="#">Research Service <span className="arrow">&#9662;</span></Link>

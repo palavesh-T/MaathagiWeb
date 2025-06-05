@@ -233,14 +233,14 @@
     margin-top: 35px;
     padding: 15px 30px;
     color: #fff;
-    background-color: skyblue;
+    background-color: darkblue;
     border-radius: 6px;
     border:none;
     margin-left: 100px;
     cursor: pointer;
   }
   .service_maathagi_new_design_div_4 button:hover{
-    background-color: darkblue;
+    background-color: skyblue;
     color: #fff;
   }
 
