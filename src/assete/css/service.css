@@ -105,7 +105,7 @@
     }
     
     .maathagi_service_div_3 {
-        width: 100%;
+        width: 85%;
     }
     
     .about_maathagi_web_design_1 {
@@ -193,7 +193,7 @@
 
 @media only screen and (max-width: 360px) {
     .service_maathagi_div {
-        height: 45vh;
+        height: 50vh;
     }
     
     .maathagi_service_div_3 {

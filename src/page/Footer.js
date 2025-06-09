@@ -2,7 +2,10 @@ import React from "react";
 import "../assete/css/footer.css";
 import { Link , useNavigate } from "react-router-dom";
 import footer_logo from "../assete/Logo/logoi 1.png";
-
+import { FiPhone } from 'react-icons/fi';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const  Footer = () => {
 
     const navigate = useNavigate();
@@ -39,10 +42,10 @@ const  Footer = () => {
 
     <div className="footer-section contact-details">
       <h3>Company Info</h3>
-      <p>Maathangi info Research & IT Solution</p>
-      <p>JJ Arcade, 1nd Floor, Near New Bus Stand,<br />Marthandam - Kanyakumari District, Tamil Nadu - 629165</p>
-      <p>Email: info@Maathangi.in</p>
-      <p>Phone: +91 98765 43210</p>
+      <h2>Maathangi info Research & IT Solution</h2>
+      <p><FontAwesomeIcon icon={faLocationDot} className="phone-loc" />JJ Arcade, 1st Floor, Near New Bus Stand,<br />Marthandam - Kanyakumari District,<br /> Tamil Nadu - 629165</p>
+      <p><FontAwesomeIcon icon={faEnvelope} /> admin@maathangi.com</p>
+      <p> <FiPhone className="phone-iconss" /> +91 7530066114</p>
     </div>
   </div>
 </footer>

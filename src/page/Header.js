@@ -98,7 +98,7 @@ return (
         </div>
         <div className='addres_add email_chg_div'>
           <h2>Email <FontAwesomeIcon icon={faEnvelope} /></h2>
-          <p>info@maathangiinfo.com</p>
+          <p>admin@maathangi.com</p>
         </div>
         <div className='mb_di_fa_ic'>
         <div className='menu_icon' onClick={toggleMenu}>
@@ -168,30 +168,30 @@ return (
             </li> */}
           <li><Link to="/Contact" onClick={phd_peoposal}>CONTACT</Link></li>
           <div className='social_icons_div'>
-  {/* <div className="tooltip">
-    <a href="https://www.facebook.com/seasensesoftwares/" target="_blank" rel="noopener noreferrer">
+ <div className="tooltip">
+    <a href="/#" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faFacebookF} />
     </a>
     <span className="tooltiptext">Facebook</span>
   </div>
   <div className="tooltip">
-    <a href="https://www.instagram.com/sea_sense_research?igsh=MWVnYTNxZ3Noc3A1bg==" target="_blank" rel="noopener noreferrer">
+    <a href="/#" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faInstagram} />
     </a>
     <span className="tooltiptext">Instagram</span>
   </div>
   <div className="tooltip">
-    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+    <a href="/#" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faLinkedinIn} />
     </a>
     <span className="tooltiptext">LinkedIn</span>
   </div>
   <div className="tooltip">
-    <a href="https://wa.me/8526700700" target="_blank" rel="noopener noreferrer">
+    <a href="/#" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faWhatsapp} />
     </a>
     <span className="tooltiptext">WhatsApp</span>
-  </div> */}
+  </div> 
 </div>
 
         </ul>

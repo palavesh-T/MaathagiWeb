@@ -44,7 +44,7 @@ const Softwaredevelopment = () =>{
                     <h2><FaUserShield className="feature-icon" />User tracking</h2>
                     <h2><FaDatabase className="feature-icon" />Automated data update of MLS data</h2>
                     <h2><FaMapMarkedAlt className="feature-icon" /> Google Map and MS Virtual Earth Map integration</h2>
-                    <h2><div className="feature-icon-group"><FaRss /><FaCreditCard /></div> Implementation of RSS feed, Credit card processing</h2>
+                    <h2><div className="feature-icon"><FaRss /><FaCreditCard /></div> Implementation of RSS feed, Credit card processing</h2>
                     <h2><FaLaptopCode className="feature-icon" /> Content Management Systems web sites and JQuery software</h2>
                     <h2><FaFileInvoiceDollar className="feature-icon" />Billing Software</h2>
                     <h2><FaUniversity className="feature-icon" />College Management</h2>

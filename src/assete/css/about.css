@@ -319,4 +319,7 @@ margin-top: 0px;
   .maathagi_gallery_div_4 {
     padding: 15px;
   }
+  .about_new_contents_1 p {
+    text-align: justify;
+}
 }

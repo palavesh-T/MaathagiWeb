@@ -1,9 +1,11 @@
 .footer {
-
-  background: darkblue;
+ background: url('../images//footer.png') no-repeat center center;
+  background-size: cover;
+  background-color: #00008be8;
   color: #fff;
   padding: 40px 20px;
   font-family: sans-serif;
+   position: relative;
 }
 
 
@@ -28,7 +30,7 @@
 .footer-section h3 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #f0f0f0;
+  color: #ccc;
 }
 
 .footer-section ul {
@@ -41,18 +43,28 @@
 }
 
 .footer-section ul li a {
-  color: #bbb;
+  color: #fff;
   text-decoration: none;
 }
 
 .footer-section ul li a:hover {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .contact-details p {
   margin-bottom: 8px;
-  color: #ccc;
+  color: #fff;
+  font-size: 15px;
+  line-height: 23px;
+}
+.contact-details h2{
+  font-size: 18px;
+  color: #fff;
+  margin-left: 26px;
+}
+.phone-loc{
+  margin-top: -45px;
 }
 
 @media (max-width: 768px) {
@@ -68,4 +80,35 @@
   .footer-logo {
     margin: 0 auto 10px;
   }
+  .footer-section {
+  flex: 1 1 65px;
+  margin: 10px;
 }
+}
+
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact-details svg,
+.contact-details .phone-iconss {
+  margin-right: 10px;
+  font-size: 18px;
+  min-width: 20px;
+}
+  .footer-section ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+      transition: all 0.3s ease;
+  }
+    .footer-section ul li a:hover{
+    color: #fff;
+    margin-left: 10px;
+    }

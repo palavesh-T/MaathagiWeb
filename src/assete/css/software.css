@@ -227,9 +227,12 @@
     }
     
     .software_maathagi_main_div_1,
-    .software_maathagi_div_design,
-    .software_maathagi_design_new_card {
+    .software_maathagi_div_design
+     {
         padding: 20px;
+    }
+    .software_maathagi_design_new_card{
+        padding: 5px;
     }
     
     .software_maathagi_div_4 h2,
@@ -319,11 +322,21 @@
     .software_maathagi_design_new_card_3{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     width: 100%;
-    padding: 5px;
+    padding: 5px !important;
     border-radius: 10px;
     background-image: url(../images//service-3-bg.png);
     background-position: center;
     background-size: cover;
 }
 
+}
+
+@media only screen and (max-width: 720px) {
+.software_maathagi_design_new_card_3 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+
+}
 }

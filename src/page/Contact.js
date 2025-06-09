@@ -107,7 +107,7 @@ const Contact =() =>{
 
                     <div className="maathagi_contact_div_3">
                         <div className="maathagi_contact_div_4">
-                            <Link to="tel:8637625100" className="flex items-center gap-2"><FiPhone />8637625100</Link>
+                            <Link to="tel:7530066114" className="flex items-center gap-2"><FiPhone />7530066114</Link>
                         </div>
                         <div className="maathagi_contact_div_4">
                            <Link to="mailto:maathagi@gmail.com" className="flex items-center gap-2"><FontAwesomeIcon icon={faEnvelope} /> maathagi@gmail.com</Link>
@@ -162,7 +162,7 @@ const Contact =() =>{
                             </div>
                         </div>
                         <div className="maathagi_contact_textarea_div">
-                            <textarea id='user_message' value={formData.user_message} onChange={handleChange}></textarea>
+                            <textarea id='user_message' placeholder='message' value={formData.user_message} onChange={handleChange}></textarea>
                             {errorMessage.user_message && <div className="error-message" style={{ color: 'red',fontSize:"10px" }}>{errorMessage.user_message}</div>}
                         </div>
                         <div className="maathagi_contact_button">
@@ -180,21 +180,21 @@ const Contact =() =>{
                     <div className="maathagi_contact_card_div_4">
                         <FiPhone className="phone-icon" />
 
-                        <Link to="">8637625100</Link>
+                        <Link to="tel:7530066114">91+ 7530066114</Link>
                     </div>
                      <div className="maathagi_contact_card_div_4">
                         <FontAwesomeIcon icon={faEnvelope} className="phone-icon" />  
 
-                        <Link to="">Addmin@gmail.com</Link>
-                         <Link to="">Addmin@gmail.com</Link>
+                        <Link to="mailto:admin@maathangi.com">admin@maathangi.com</Link>
+                        
                     </div>
                      <div className="maathagi_contact_card_div_4">
                         <FontAwesomeIcon icon={faLocationDot} className="phone-icon" />
 
-                        <Link to="">Near New Bus Stand
-Market Road
-Marthandam, K.K. Dist.,
-TamilNadu, India - 629 165</Link>
+                        <Link to="">Near New Bus Stand,
+                                    Market Road,
+                                    Marthandam, K.K. Dist.,
+                                    Tamil Nadu, India - 629 165</Link>
                     </div>
                 </div>
             </div>

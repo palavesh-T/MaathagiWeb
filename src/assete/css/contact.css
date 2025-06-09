@@ -204,10 +204,15 @@ margin-left: 45%;
     }
     
     .maathagi_contact_input_divs_3 input,
-    .maathagi_contact_textarea_div textarea,
-    .maathagi_contact_input_divs_3 select {
+    .maathagi_contact_textarea_div textarea
+    {
         padding: 12px 15px;
+        width: 92%;
     }
+     .maathagi_contact_input_divs_3 select{
+        padding: 12px 15px;
+        width: 100%;
+     }
     
     .maathagi_contact_textarea_div textarea {
         height: 120px;
@@ -230,7 +235,7 @@ margin-left: 45%;
 
 @media only screen and (max-width: 360px) {
     .contact_maathagi_div {
-        height: 45vh;
+        height: 50vh;
     }
     
     .maathagi_contact_div_2 h2 {
