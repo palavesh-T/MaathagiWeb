@@ -52,11 +52,12 @@
   text-decoration: none;
 }
 
-.contact-details p {
+.contact-details p a {
   margin-bottom: 8px;
   color: #fff;
   font-size: 15px;
   line-height: 23px;
+  text-decoration: none;
 }
 .contact-details h2{
   font-size: 18px;

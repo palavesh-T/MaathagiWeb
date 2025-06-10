@@ -2,7 +2,7 @@ import React from "react";
 import MetaTitle from '../components/MetaTittle';
 import Header from "./Header";
 import "../assete/css/service.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import web_design from "../assete/about/website design.jpg";
 import college_design from "../assete/about/college website.jpg";
 import industry_design from "../assete/about/industry.jpg";
@@ -11,6 +11,16 @@ import { FaUsers,FaHandshake, FaPiggyBank  } from "react-icons/fa";
 import service_pic_2 from "../assete/images/service pic 2.jpg";
 
 const Service = () =>{
+
+         const navigate = useNavigate();
+    
+        const phd_peoposal = (path) => {
+            navigate(path);
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 0);
+        };
+        
 
     return(
         <>
@@ -28,7 +38,7 @@ const Service = () =>{
                     <p>Welcome to Sea Sense Research, where we empower scholars with expert support and guidance. Our services include research proposal development, literature review assistance, data analysis, manuscript preparation and academic coaching.</p>
                 </div>
                 <div className="service_maathagi_new_design_div_4">
-                    <button>Contact</button>
+                    <button onClick={() => phd_peoposal("/Contact")} >Contact</button>
                     </div>
             </div>
         </div>
@@ -145,8 +155,7 @@ Our streamlined processes help reduce unnecessary expenses.</p>
                 <div className="about_maathagi_background_pic_div_2">
                     <h2>Experience</h2>
                     <p> Our team heads have rich experience in the field of research for more than 15 years especially in the development of questionnaire, research design, quantitative and qualitative study designs, and statistical analysis. The technical heads will guide you through your research journey and drive you to achieve your PhD completion dream. There is complete support at every stage from the identification of PHD topic to the final document.</p>
-                    <h2>PhD thesis writing services from MAATHANGI</h2>
-                    <p>MAATHANGI guide you for complete PhD doctorate thesis services such as</p>
+                   
                 </div>
             </div>
         </div>

@@ -42,7 +42,7 @@ const About = () =>{
                             </div>
                             <div className="maathagi_about_div_6">
                                 <h1>All Technologies</h1>
-                                <p>Our PhD doctorate thesis writing services.</p>
+                                {/* <p>Our PhD doctorate thesis writing services.</p> */}
                             </div>
                         </div>
                         <p>We ensure that your research data, like your concept, collected data, interview transcripts, printed copies of these works, soft copies, research articles and every document related to your research is confidential and strictly handled only for the internal purposes. We have an efficient client service team to assist you 24×7 with all your service-related queries. Although it may not appear very special to you, we want to tell you how we differentiate our solutions from what you can receive from any other service provider.</p>
@@ -106,7 +106,7 @@ const About = () =>{
         {/*old design close*/}
         <div className="about_new_contents">
             <div className="about_new_contents_1">
-                <h1>maathagi info research solution</h1>
+                <h1>maathangi info research solution</h1>
                 <p>we are furnishing individuals in all technologies and domains by fulfilling their desires in Research & Development sector through efficient training methodologies.</p>
             </div>
         </div>

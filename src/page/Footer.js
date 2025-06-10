@@ -44,8 +44,8 @@ const  Footer = () => {
       <h3>Company Info</h3>
       <h2>Maathangi info Research & IT Solution</h2>
       <p><FontAwesomeIcon icon={faLocationDot} className="phone-loc" />JJ Arcade, 1st Floor, Near New Bus Stand,<br />Marthandam - Kanyakumari District,<br /> Tamil Nadu - 629165</p>
-      <p><FontAwesomeIcon icon={faEnvelope} /> admin@maathangi.com</p>
-      <p> <FiPhone className="phone-iconss" /> +91 7530066114</p>
+      <p><FontAwesomeIcon icon={faEnvelope} /> <Link to="mailto:admin@maathangi.com">admin@maathangi.com</Link></p>
+      <p> <FiPhone className="phone-iconss" /><Link to="tel:7530066114">+91 7530066114</Link> </p>
     </div>
   </div>
 </footer>

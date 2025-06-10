@@ -104,7 +104,7 @@ const Home = () => {
 
         <div className="maathagi_new_text_design">
             <div className="maathagi_new_text_design_1">
-                <h1>MAATHAGI <span className="outline-text">INFO RESEARCH</span> AND DEVELOPMENT</h1>
+                <h1>MAATHANGI <span className="outline-text">INFO RESEARCH</span> AND DEVELOPMENT</h1>
             </div>
         </div>
 
@@ -116,7 +116,7 @@ const Home = () => {
                     <div className="maathagi_new_icon_add">
                         <div className="maathagi_new_icon_add_1">
                             <h4>All Technologies</h4>
-                            <h5>Our PhD doctorate thesis writing services.</h5>
+                            {/* <h5>Our PhD doctorate thesis writing services.</h5> */}
                         </div>
                     </div>
                     <div className="maathagi_new_dign_sub_card_3">

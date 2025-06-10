@@ -103,7 +103,7 @@ const Contact =() =>{
             <div className="maathagi_contact_div_1">
                 <div className="maathagi_contact_div_2">
                     <h2>Connect with Our Team of Expert</h2>
-                    <p>Contcat our team of excellence-driven experts today to bring your project to life.</p>
+                    <p>Contact our team of excellence-driven experts today to bring your project to life.</p>
 
                     <div className="maathagi_contact_div_3">
                         <div className="maathagi_contact_div_4">
@@ -193,7 +193,7 @@ const Contact =() =>{
 
                         <Link to="">Near New Bus Stand,
                                     Market Road,
-                                    Marthandam, K.K. Dist.,
+                                    Marthandam, Kanyakumari District,
                                     Tamil Nadu, India - 629 165</Link>
                     </div>
                 </div>

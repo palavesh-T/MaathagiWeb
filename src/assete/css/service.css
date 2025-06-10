@@ -240,7 +240,7 @@
     cursor: pointer;
   }
   .service_maathagi_new_design_div_4 button:hover{
-    background-color: skyblue;
+    background-color: var(--themeht-secondary-color);
     color: #fff;
   }
 
@@ -312,8 +312,8 @@ margin-top: 40px;
     font-family: "Poppins", Tahoma, Geneva, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 25px;
-    color: #6e6e6e;
+    line-height: 1.9;
+    color: #000;
 }
 
 /* Mobile Responsive Styles */
@@ -385,8 +385,8 @@ margin-top: 40px;
     font-family: "Poppins", Tahoma, Geneva, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 25px;
-    color: #6e6e6e;
+    line-height: 1.9;
+    color: #000;
 }
 
 /* Mobile Responsive Styles */
