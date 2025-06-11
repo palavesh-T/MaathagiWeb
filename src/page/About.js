@@ -106,7 +106,7 @@ const About = () =>{
         {/*old design close*/}
         <div className="about_new_contents">
             <div className="about_new_contents_1">
-                <h1>maathangi info research solution</h1>
+                <h1>maathangi info research solutions</h1>
                 <p>we are furnishing individuals in all technologies and domains by fulfilling their desires in Research & Development sector through efficient training methodologies.</p>
             </div>
         </div>

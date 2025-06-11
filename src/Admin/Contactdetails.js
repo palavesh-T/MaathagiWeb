@@ -68,17 +68,17 @@ const formatDate = (dateString) => {
     return `${day}-${month}-${year}`;
 };
 
-const formatTime = (timeString) => {
-    if (!timeString || typeof timeString !== 'string') return 'N/A';
-    const parts = timeString.split(':');
-    if (parts.length < 2) return 'N/A'; // Must have at least hours and minutes
-    const [hours, minutes] = parts;
-    const hour = parseInt(hours, 10);
-    if (isNaN(hour)) return 'N/A';
-    const ampm = hour >= 12 ? 'PM' : 'AM';
-    const hour12 = hour % 12 || 12;
-    return `${hour12}:${minutes.padStart(2, '0')} ${ampm}`;
-};
+// const formatTime = (timeString) => {
+//     if (!timeString || typeof timeString !== 'string') return 'N/A';
+//     const parts = timeString.split(':');
+//     if (parts.length < 2) return 'N/A'; 
+//     const [hours, minutes] = parts;
+//     const hour = parseInt(hours, 10);
+//     if (isNaN(hour)) return 'N/A';
+//     const ampm = hour >= 12 ? 'PM' : 'AM';
+//     const hour12 = hour % 12 || 12;
+//     return `${hour12}:${minutes.padStart(2, '0')} ${ampm}`;
+// };
 
 
     return(
@@ -96,7 +96,7 @@ const formatTime = (timeString) => {
               <th>Service</th>
               <th>Message</th>
               <th>Date</th>
-              <th>Time</th>
+              {/* <th>Time</th> */}
             <th>Delete</th> 
             </tr>
           </thead>
@@ -112,7 +112,7 @@ const formatTime = (timeString) => {
       <td>{item.service_type}</td>
       <td>{item.message}</td>
       <td>{formatDate(item.date)}</td>
-      <td>{formatTime(item.time)}</td>
+      {/* <td>{formatTime(item.time)}</td> */}
        <td><button onClick={() => openDeletePopup(item.id)}>Delete</button></td>
     </tr>
   ))

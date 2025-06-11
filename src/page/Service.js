@@ -35,7 +35,7 @@ const Service = () =>{
                     <h2>High-Quality Work Experiences</h2>
                 </div>
                 <div className="service_maathagi_new_design_div_3">
-                    <p>Welcome to Sea Sense Research, where we empower scholars with expert support and guidance. Our services include research proposal development, literature review assistance, data analysis, manuscript preparation and academic coaching.</p>
+                    <p>Welcome to Maathangi Research, where we empower scholars with expert support and guidance. Our services include research proposal development, literature review assistance, data analysis, manuscript preparation and academic coaching.</p>
                 </div>
                 <div className="service_maathagi_new_design_div_4">
                     <button onClick={() => phd_peoposal("/Contact")} >Contact</button>
@@ -114,7 +114,7 @@ const Service = () =>{
                     <div className="maathagi_new_design_project_4">
                         <h2>Expert Team</h2>
                         <p>Our team comprises industry professionals with years of experience.
-We bring deep technical knowledge and creative problem-solving.</p>
+                        We bring deep technical knowledge and creative problem-solving.</p>
                     </div>
                 </div>
                 <div className="maathagi_new_design_project_2">
@@ -124,7 +124,7 @@ We bring deep technical knowledge and creative problem-solving.</p>
                     <div className="maathagi_new_design_project_4">
                         <h2>Free Consultation</h2>
                         <p>We offer a no-obligation consultation to understand your needs.
-Speak directly with our experts to explore the best solutions.</p>
+                        Speak directly with our experts to explore the best solutions.</p>
                     </div>
                 </div>
                 <div className="maathagi_new_design_project_2">
@@ -134,7 +134,7 @@ Speak directly with our experts to explore the best solutions.</p>
                     <div className="maathagi_new_design_project_4">
                         <h2>Lowest Cost</h2>
                         <p>We deliver high-quality services at the most competitive prices.
-Our streamlined processes help reduce unnecessary expenses.</p>
+                        Our streamlined processes help reduce unnecessary expenses.</p>
                     </div>
                 </div>
             </div>

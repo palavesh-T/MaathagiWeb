@@ -38,7 +38,6 @@ return(
                 <h2><FaRobot style={{ marginRight: "8px" }} /> Artificial Intelligence</h2>
                 <h2><FaVolumeUp style={{ marginRight: "8px" }} /> Audio Signal Processing</h2>
             </div>
-
             </div>
              <div className="maathagi_domain_main_div_2">
                 <div className="maathagi_domain_main_div_3">
@@ -57,7 +56,6 @@ return(
                 </div>
             </div>
         </div>
-
          <div className="maathagi_domain_main_div_1">
             <div className="maathagi_domain_main_div_2">
                 <div className="maathagi_domain_main_div_3">

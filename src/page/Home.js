@@ -88,7 +88,7 @@ const Home = () => {
                 <div className="maathangi_home_div_3">
                     <div className="maathangi_home_div_4">
                         <h1>ABOUT US</h1>
-                        <p> We are serving more than 250+ Ph. D candidates since 2013. Maathangi Research Solutions specializes in creating and delivering research oriented assignments, varied in nature, with an assurance of on-time delivery and content free from plagiarism. We are providing Academic and PhD Thesis-Research Writing Services globally.</p>
+                        <p> We are serving more than 250+ Ph.D candidates since 2013. Maathangi Research Solutions specializes in creating and delivering research oriented assignments, varied in nature, with an assurance of on-time delivery and content free from plagiarism. We are providing Academic and PhD Thesis-Research Writing Services globally.</p>
                    <div className='rat_tar_lis'>
 
                         <div className="maathagi_about_more_btn">
