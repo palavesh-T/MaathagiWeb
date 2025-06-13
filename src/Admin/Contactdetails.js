@@ -121,7 +121,6 @@ const formatDate = (dateString) => {
     <td colSpan="9">No contact details found.</td>
   </tr>
 )}
-            
           </tbody>
         </table>
       </div>
@@ -135,7 +134,6 @@ const formatDate = (dateString) => {
                         </div>
                     </div>
                 </div>
-                 
             )}
             <Adminfooter/>
         </>

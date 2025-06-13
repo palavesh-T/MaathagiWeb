@@ -32,7 +32,7 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 .maathagi_domain_main_div_3 h2 {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
   gap: 10px;
   margin-bottom: 12px;
   color: #333;
@@ -126,4 +126,59 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
         align-items: flex-start;
         gap: 5px;
     }
+}
+
+.maathagi_domain_tools h2{
+    text-align: center;
+     color: var( --themeht-secondary-color);
+}
+
+.maathagi_domain_tools_2{
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.maathagi_domain_tools_3 h2{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+}
+.maathagi_domain_tools_3 h2 {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #333;
+}
+.maathagi_domain_tools_1{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .maathagi_domain_tools_1 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .maathagi_domain_tools_2 {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .maathagi_domain_tools_3 h2 {
+    font-size: 16px;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .maathagi_domain_tools h2 {
+    font-size: 22px;
+  }
 }

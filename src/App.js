@@ -21,6 +21,7 @@ import Softwaredevelopment from "./page/Softwaredevelopment";
 function App() {
   return (
     <BrowserRouter>
+    
       <HelmetProvider>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -40,7 +41,7 @@ function App() {
           <Route path="Admin" element={<Admin/>} />
           <Route path="Changepassword" element={<Changepassword/>} />
           <Route path="Contactdetails" element={<Contactdetails/>} />
-          <Route path="Adminfooter" element={<Adminfooter/>} />
+          <Route path="Adminfooter" element={<Adminfooter/>} />      
         </Routes>
       </HelmetProvider>
     </BrowserRouter>

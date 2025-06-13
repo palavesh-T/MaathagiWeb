@@ -300,4 +300,8 @@ width: 100%;
   }
   
   
-  
+  .active-menu {
+  color: #fff !important;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}

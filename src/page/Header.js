@@ -7,6 +7,7 @@ import { faFacebookF, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome
 import { faMapMarkerAlt, faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import {motion, useScroll} from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -68,6 +69,7 @@ const Header = () =>{
   };
   const {scrollYProgress} =useScroll()
 
+const location = useLocation();
 
     
 return (
@@ -125,13 +127,25 @@ return (
     <div className={`main_menu_div ${menuOpen ? 'open' : ''}`}>
       <div className='add_menus_div'>
         <ul>
-          <li><Link to="/#" onClick={phd_peoposal}>HOME</Link></li>
+         <li>
+  <Link to="/Home" onClick={phd_peoposal} className={location.pathname === "/Home" ? "active-menu" : ""}>HOME</Link>
+</li>
           
-          <li><Link to="/About" onClick={phd_peoposal}>ABOUT</Link></li>
-          <li><Link to="/Service" onClick={phd_peoposal}>SERVICE</Link></li>
-           <li><Link to="/Domains" onClick={phd_peoposal}>DOMAINS</Link></li>
-           <li><Link to="/Phd" onClick={phd_peoposal}>PHD SERVICE</Link></li>
-            <li><Link to="/Softwaredevelopment" onClick={phd_peoposal}>SOFTWARE DEVELOPMENT</Link></li>
+         <li>
+  <Link to="/About" onClick={phd_peoposal} className={location.pathname === "/About" ? "active-menu" : ""}>ABOUT</Link>
+</li>
+        <li>
+  <Link to="/Service" onClick={phd_peoposal} className={location.pathname === "/Service" ? "active-menu" : ""}>SERVICES</Link>
+</li>
+         <li>
+  <Link to="/Domains" onClick={phd_peoposal} className={location.pathname === "/Domains" ? "active-menu" : ""}>DOMAINS</Link>
+</li>
+       <li>
+  <Link to="/Phd" onClick={phd_peoposal} className={location.pathname === "/Phd" ? "active-menu" : ""}>PHD SERVICES</Link>
+</li>
+           <li>
+  <Link to="/Softwaredevelopment" onClick={phd_peoposal} className={location.pathname === "/Softwaredevelopment" ? "active-menu" : ""}>SOFTWARE DEVELOPMENT</Link>
+</li>
           {/* <li onMouseEnter={!isMobile ? () => toggleDropdown('phd') : null} onMouseLeave={!isMobile ? () => toggleDropdown(null) : null} onClick={isMobile ? (e) => { e.stopPropagation(); toggleDropdown('phd'); } : null}>
               <Link to="#">Research Service <span className="arrow">&#9662;</span></Link>
               <div className={`dropdown-content ${dropdownOpen === 'phd' ? 'open' : ''}`}>
@@ -166,7 +180,9 @@ return (
                 <Link to="/Literature" onClick={phd_peoposal}>Literature Review</Link>
               </div>
             </li> */}
-          <li><Link to="/Contact" onClick={phd_peoposal}>CONTACT</Link></li>
+         <li>
+  <Link to="/Contact" onClick={phd_peoposal} className={location.pathname === "/Contact" ? "active-menu" : ""}>CONTACT</Link>
+</li>
           <div className='social_icons_div'>
  <div className="tooltip">
     <a href="/#" target="_blank" rel="noopener noreferrer">
