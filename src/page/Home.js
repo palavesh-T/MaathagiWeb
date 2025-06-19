@@ -93,7 +93,7 @@ const Home = () => {
 
                         <div className="maathagi_about_more_btn">
                             <div className="maathagi_about_more_btn_1">
-                                <button>MORE ABOUT US</button>
+                                <button onClick={() => phd_peoposal("/About")} >MORE ABOUT US</button>
                             </div>
                         </div>
                     </div>

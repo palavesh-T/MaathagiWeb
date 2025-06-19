@@ -2,7 +2,7 @@ import React from "react";
 import MetaTitle from '../components/MetaTittle';
 import Header from "./Header";
 import "../assete/css/about.css";
-import about_maathagi from "../assete/SVG/badge-check.svg";
+import about_maathagi from "../assete/SVG/connection.gif";
 import about_maathagi_1 from "../assete/about/maathagi about.jpg";
 import puzzle_pic_1 from "../assete/about/puzzle_228431.png";
 import high_abot from "../assete/about/inovation.png";

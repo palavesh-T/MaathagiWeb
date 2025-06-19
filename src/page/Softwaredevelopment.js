@@ -5,10 +5,19 @@ import software_pic_1 from "../assete/images/software 1.jpeg";
 import { FaLock, FaSearch, FaServer, FaUserShield, FaDatabase, FaMapMarkedAlt,FaRss,FaCreditCard,FaLaptopCode,FaFileInvoiceDollar,FaUniversity,FaMoneyBillWave,FaSms } from 'react-icons/fa';
   import {FaVideo,FaCode,FaSearchDollar,FaPhoneAlt,FaEnvelope,FaMapMarkerAlt,FaFileAlt,FaMobileAlt,FaSchool,FaSitemap,FaShoppingCart,FaUserClock} from 'react-icons/fa';
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import MetaTitle from '../components/MetaTittle';
 
 const Softwaredevelopment = () =>{
+
+     const navigate = useNavigate();
+    
+        const phd_peoposal = (path) => {
+            navigate(path);
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 0);
+        };
 
     return(
         <>
@@ -73,7 +82,7 @@ const Softwaredevelopment = () =>{
                     <h2>We run all kinds of IT services that vow your success</h2>
                 </div>
                 <div className="software_maathagi_div_design_3">
-                    <button><Link to="/Contact">Let's talk</Link></button>
+                    <button onClick={() => phd_peoposal("/Contact")}>Let's talk</button>
                 </div>
             </div>
         </div>
