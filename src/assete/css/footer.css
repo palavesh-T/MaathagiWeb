@@ -53,7 +53,7 @@
 }
 
 .contact-details p a {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   color: #fff;
   font-size: 15px;
   line-height: 23px;
@@ -85,6 +85,7 @@
   flex: 1 1 65px;
   margin: 10px;
 }
+
 }
 
 
@@ -113,3 +114,24 @@
     color: #fff;
     margin-left: 10px;
     }
+
+    .footer-bottom {
+  text-align: center;
+  padding: 20px 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer-bottom strong {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    font-size: 9px;
+    padding: 0px 5px 0;
+    line-height: 1.6;
+  }
+}

@@ -106,13 +106,13 @@ const Contact =() =>{
 
                     <div className="maathagi_contact_div_3">
                         <div className="maathagi_contact_div_4">
-                            <Link to="tel:7530066114" className="flex items-center gap-2"><FiPhone style={{color:"darkblue"}} />7530066114</Link>
+                            <Link to="tel:7530066114" className="flex items-center gap-2"><FiPhone style={{color:"#007bff"}} />7530066114</Link>
                         </div>
                         <div className="maathagi_contact_div_4">
-                           <Link to="mailto:maathagi@gmail.com" className="flex items-center gap-2"><FontAwesomeIcon icon={faEnvelope} style={{color:"darkblue"}} /> maathagi@gmail.com</Link>
+                           <Link to="mailto:maathagi@gmail.com" className="flex items-center gap-2"><FontAwesomeIcon icon={faEnvelope} style={{color:"#007bff"}} /> maathagi@gmail.com</Link>
                         </div>
                         <div className="maathagi_contact_div_4">
-                           <Link to="/location" className="flex items-center gap-2"><FontAwesomeIcon icon={faLocationDot} style={{color:"darkblue"}} />Location</Link>
+                           <Link to="/location" className="flex items-center gap-2"><FontAwesomeIcon icon={faLocationDot} style={{color:"#007bff"}} />Location</Link>
                         </div>
                     </div>
 

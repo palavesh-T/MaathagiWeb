@@ -48,6 +48,9 @@ const  Footer = () => {
       <p> <FiPhone className="phone-iconss" /><Link to="tel:7530066114">+91 7530066114</Link> </p>
     </div>
   </div>
+  <div className="footer-bottom">
+    <p>Copyright © 2024 - 2025 <strong>MAATHANGI</strong> | All Rights Reserved</p>
+  </div>
 </footer>
 
         
