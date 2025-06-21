@@ -39,7 +39,7 @@
 }
 .maathagi_phd_div_3 {
     display: flex;
-    align-items: center; /* Vertically center the icon and text */
+    align-items: center; 
     gap: 10px; /* Space between the icon and text */
 }
 .maathagi_phd_button {
