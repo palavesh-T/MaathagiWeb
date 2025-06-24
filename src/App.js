@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async'; 
+import PrivateRoute from './components/PrivateRoute';
 import Header from './page/Header';
 import Home from "./page/Home";
 import Footer from "./page/Footer";
@@ -20,8 +21,8 @@ import Softwaredevelopment from "./page/Softwaredevelopment";
 
 function App() {
   return (
-    <BrowserRouter>
     
+    <HashRouter>
       <HelmetProvider>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -39,12 +40,12 @@ function App() {
           <Route path="Softwaredevelopment" element={<Softwaredevelopment/>} />
           <Route path="Adminheader" element={<Adminheader/>} />
           <Route path="Admin" element={<Admin/>} />
-          <Route path="Changepassword" element={<Changepassword/>} />
-          <Route path="Contactdetails" element={<Contactdetails/>} />
+          <Route path="Changepassword" element={<PrivateRoute><Changepassword/></PrivateRoute>} />
+          <Route path="Contactdetails" element={<PrivateRoute><Contactdetails/></PrivateRoute>} />
           <Route path="Adminfooter" element={<Adminfooter/>} />      
         </Routes>
       </HelmetProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -1,5 +1,7 @@
 import axios from 'axios';
- axios.defaults.baseURL="http://localhost:8080/maathagi-backend/";
+
+axios.defaults.baseURL= "https://maathangibackend.seataxi.in/backend/";
+ //axios.defaults.baseURL="http://localhost:8080/maathagi-backend/";
 
 
  const REGISTER_URL_LOGIN ="Login";
