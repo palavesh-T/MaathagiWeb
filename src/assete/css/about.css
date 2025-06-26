@@ -148,14 +148,16 @@ margin-top: 0px;
     text-align: center;
 }
 
+ 
 
 
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 768px) {
     .maathagi_about_div {
         height: 50vh;
-        background-position: center;
+        background-position: top center;
     }
+    
     
     .maathagi_about_div_2 {
         flex-direction: column;
