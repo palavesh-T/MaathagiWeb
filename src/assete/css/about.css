@@ -228,6 +228,10 @@ margin-top: 0px;
         margin-bottom: 20px;
         padding: 10px;
     }
+    .abou_cont_div_cot h2{
+        font-size: 15px;
+        text-align: center;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -323,5 +327,6 @@ margin-top: 0px;
   }
   .about_new_contents_1 p {
     text-align: justify;
+    line-height: 1.7;
 }
 }

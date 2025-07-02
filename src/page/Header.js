@@ -71,6 +71,20 @@ const Header = () =>{
 
 const location = useLocation();
 
+ useEffect(() => {
+          const handleRightClick = (e) => {
+            e.preventDefault(); // This stops the right-click menu from opening
+          };
+      
+          document.addEventListener("contextmenu", handleRightClick);
+      
+          // Cleanup when component unmounts
+          return () => {
+            document.removeEventListener("contextmenu", handleRightClick);
+          };
+        }, []);
+
+
     
 return (
 <>

@@ -110,7 +110,7 @@ const formatDate = (dateString) => {
       <td>{item.phone}</td>
       <td>{item.email}</td>
       <td>{item.service_type}</td>
-      <td>{item.message}</td>
+      <td style={{ maxWidth: '300px', maxHeight: '100px', overflow: 'auto' }}>{item.message}</td>
       <td>{formatDate(item.date)}</td>
       {/* <td>{formatTime(item.time)}</td> */}
        <td><button onClick={() => openDeletePopup(item.id)}>Delete</button></td>

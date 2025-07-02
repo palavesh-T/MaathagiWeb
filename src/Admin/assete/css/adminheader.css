@@ -1,10 +1,12 @@
 .admin-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #003366;
-  padding: 10px 20px;
-  color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 10px 0px;
+    color: white;
+    position: fixed;
+    width: 100%;
 }
 
 .admin-logo {

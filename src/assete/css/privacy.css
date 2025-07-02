@@ -1,7 +1,42 @@
 .privacy_maathagi_div{
      background-image: url(../images//privpol.jpg);
     background-size: cover;
-    background-position: calc(100%);
+    background-position: center;
     width: 100%;
     height:90vh;
+}
+.privacy_policay_main_div{
+    padding: 50px;
+}
+.privacy_policay_main_div_1 h2{
+    font-size: 25px;
+    color: var( --themeht-secondary-color);
+}
+.privacy_policay_main_div_1 p{
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+/* Mobile view CSS */
+@media (max-width: 768px) {
+    .privacy_maathagi_div {
+        height: 50vh;
+        background-position: center;
+    }
+
+    .privacy_policay_main_div {
+        padding: 20px;
+    }
+
+    .privacy_policay_main_div_1 h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .privacy_policay_main_div_1 p {
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: justify;
+    }
 }

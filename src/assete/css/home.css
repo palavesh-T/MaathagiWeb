@@ -464,6 +464,9 @@ position: relative;
     .phd_good_proposal_tips h2 {
         font-size: 20px;
     }
+    .phd_good_proposal_tips p{
+        text-align: justify;
+    }
 }
 
 /* Special adjustments for very small devices */

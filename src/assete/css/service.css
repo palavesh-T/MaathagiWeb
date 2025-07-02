@@ -259,6 +259,12 @@
     .service_maathagi_new_design_div_3 {
         width: 100%;
     }
+    .service_maathagi_new_design_div_3 p{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 1.7;
+    }
     
     .service_maathagi_new_design_div_2 h2 {
         font-size: 22px;
