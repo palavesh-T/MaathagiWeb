@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async'; 
 import PrivateRoute from './components/PrivateRoute';
 import Header from './page/Header';
@@ -22,7 +22,7 @@ import Softwaredevelopment from "./page/Softwaredevelopment";
 function App() {
   return (
     
-    <HashRouter>
+    <BrowserRouter>
       <HelmetProvider>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -45,7 +45,7 @@ function App() {
           <Route path="Adminfooter" element={<Adminfooter/>} />      
         </Routes>
       </HelmetProvider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
