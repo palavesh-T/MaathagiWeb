@@ -110,7 +110,7 @@ return (
        
           <h2>Address <FontAwesomeIcon icon={faMapMarkerAlt} className='location_icon' /></h2>
           
-          <p>JJ Arcade, First Floor, Near New Bus Stand, Marthandam, Tamil Nadu.</p>
+          <p>Poovanvilai, Thirithuvapuram, Madichal Post, Kanyakumari District, Tamil Nadu - 629163</p>
         </div>
         <div className='addres_add email_chg_div'>
           <h2>Email <FontAwesomeIcon icon={faEnvelope} /></h2>

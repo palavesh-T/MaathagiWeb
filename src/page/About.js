@@ -45,7 +45,7 @@ const About = () =>{
                                 {/* <p>Our PhD doctorate thesis writing services.</p> */}
                             </div>
                         </div>
-                        <p>We ensure that your research data, like your concept, collected data, interview transcripts, printed copies of these works, soft copies, research articles and every document related to your research is confidential and strictly handled only for the internal purposes. We have an efficient client service team to assist you 24×7 with all your service-related queries. Although it may not appear very special to you, we want to tell you how we differentiate our solutions from what you can receive from any other service provider.</p>
+                        <p>We ensure that your research data, like your concept, collected data, interview transcripts, printed copies of these works, soft copies, research articles and every document related to your research is confidential and strictly handled only for the internal purposes. We have an efficient client service team to assist you  with all your service-related queries. Although it may not appear very special to you, we want to tell you how we differentiate our solutions from what you can receive from any other service provider.</p>
                     </div>
                     <div className="maathagi_about_div_7">
                         <img src={about_maathagi_1} alt="" />

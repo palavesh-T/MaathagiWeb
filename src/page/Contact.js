@@ -106,13 +106,13 @@ const Contact =() =>{
 
                     <div className="maathagi_contact_div_3">
                         <div className="maathagi_contact_div_4">
-                            <Link to="tel:7530066114" className="flex items-center gap-2"><FiPhone style={{color:"#007bff"}} />7530066114</Link>
+                            <Link to="tel:7530066114" className="flex items-center gap-2"><FiPhone style={{color:"#fff"}} />7530066114</Link>
                         </div>
                         <div className="maathagi_contact_div_4">
-                           <Link to="mailto:maathagi@gmail.com" className="flex items-center gap-2"><FontAwesomeIcon icon={faEnvelope} style={{color:"#007bff"}} /> maathagi@gmail.com</Link>
+                           <Link to="mailto:admin@maathangi.com" className="flex items-center gap-2"><FontAwesomeIcon icon={faEnvelope} style={{color:"#fff"}} /> admin@maathangi.com</Link>
                         </div>
                         <div className="maathagi_contact_div_4">
-                           <Link to="/location" className="flex items-center gap-2"><FontAwesomeIcon icon={faLocationDot} style={{color:"#007bff"}} />Location</Link>
+                           <Link to="/location" className="flex items-center gap-2"><FontAwesomeIcon icon={faLocationDot} style={{color:"#fff"}} />Location</Link>
                         </div>
                     </div>
 
@@ -178,22 +178,19 @@ const Contact =() =>{
                 <div className="maathagi_contact_card_div_3">
                     <div className="maathagi_contact_card_div_4">
                         <FiPhone className="phone-icon" />
-
+                            <h2>Phone</h2>
                         <Link to="tel:7530066114">91+ 7530066114</Link>
                     </div>
                      <div className="maathagi_contact_card_div_4">
                         <FontAwesomeIcon icon={faEnvelope} className="phone-icon" />  
-
+                          <h2>Email</h2>
                         <Link to="mailto:admin@maathangi.com">admin@maathangi.com</Link>
                         
                     </div>
                      <div className="maathagi_contact_card_div_4">
                         <FontAwesomeIcon icon={faLocationDot} className="phone-icon" />
-
-                        <Link to="">Near New Bus Stand,
-                                    Market Road,
-                                    Marthandam, Kanyakumari District,
-                                    Tamil Nadu, India - 629 165</Link>
+                          <h2>Registered Office</h2>
+                        <Link to="">Poovanvilai, Thirithuvapuram, Madichal Post, Kanyakumari District, Tamil Nadu - 629 163</Link>
                     </div>
                 </div>
             </div>

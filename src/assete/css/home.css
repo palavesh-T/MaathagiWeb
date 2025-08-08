@@ -55,6 +55,7 @@ position: relative;
   margin: 0px 0px ;
   color: inherit;
   border: none;
+  cursor: pointer;
 }
 .hm_bnts button:hover{
   background-color: darkblue;

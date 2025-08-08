@@ -50,7 +50,7 @@ const Home = () => {
     <div className="maathagi_old_design_inpt">
         <div className="maathagi_old_design_inpt_1">
             <h1>Superior Services</h1>
-            <p>We Deliver What We PROMISE</p>
+            <p>We Deliver What We Promise</p>
         </div>
         <div className="maathagi_old_design_inpt_2">
             <div className="maathagi_old_design_inpt_3">
@@ -120,7 +120,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="maathagi_new_dign_sub_card_3">
-                        <p> We ensure that your research data, like your concept, collected data, interview transcripts, printed copies of these works, soft copies, research articles and every document related to your research is confidential and strictly handled only for the internal purposes. We have an efficient client service team to assist you 24×7 with all your service-related queries. Although it may not appear very special to you, we want to tell you how we differentiate our solutions from what you can receive from any other service provider.</p>
+                        <p> We ensure that your research data, like your concept, collected data, interview transcripts, printed copies of these works, soft copies, research articles and every document related to your research is confidential and strictly handled only for the internal purposes. We have an efficient client service team to assist you  with all your service-related queries. Although it may not appear very special to you, we want to tell you how we differentiate our solutions from what you can receive from any other service provider.</p>
                     </div>
                 </div>
 

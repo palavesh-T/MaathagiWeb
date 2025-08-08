@@ -42,7 +42,7 @@ const  Footer = () => {
 
     <div className="footer-section contact-details">
       <h3>Company Info</h3>
-      <h2>Maathangi info Research & IT Solutions</h2>
+      <h2>Maathangi Info Research Solutions Pvt Ltd.,</h2>
       <p><FontAwesomeIcon icon={faLocationDot} className="phone-loc" />JJ Arcade, 1st Floor, Near New Bus Stand,<br />Marthandam - Kanyakumari District,<br /> Tamil Nadu - 629165</p>
       <p><FontAwesomeIcon icon={faEnvelope} /> <Link to="mailto:admin@maathangi.com">admin@maathangi.com</Link></p>
       <p> <FiPhone className="phone-iconss" /><Link to="tel:7530066114">+91 7530066114</Link> </p>
