@@ -18,6 +18,7 @@ import Changepassword from "./Admin/Changepassword";
 import Contactdetails from "./Admin/Contactdetails";
 import Adminfooter from "./Admin/Adminfooter";
 import Softwaredevelopment from "./page/Softwaredevelopment";
+import Pricing from "./page/Pricing";
 
 function App() {
   return (
@@ -33,16 +34,17 @@ function App() {
           <Route path="Service" element={<Service/>} />
           <Route path="Contact" element={<Contact/>} />
           <Route path="Domains" element={<Domains/>} /> 
+          <Route path="Pricing" element={<Pricing/>} />
           <Route path="Phd"  element={<Phd/>} />
           <Route path="Privacypolicy" element={<Privacypolicy/>} />
           <Route path="Terms" element={<Terms/>} />
           <Route path="Cancellation" element={<Cancellation/>} />
           <Route path="Softwaredevelopment" element={<Softwaredevelopment/>} />
-          <Route path="Adminheader" element={<Adminheader/>} />
+          <Route path="Adminheader" element={<PrivateRoute><Adminheader/></PrivateRoute>} />
           <Route path="Admin" element={<Admin/>} />
           <Route path="Changepassword" element={<PrivateRoute><Changepassword/></PrivateRoute>} />
           <Route path="Contactdetails" element={<PrivateRoute><Contactdetails/></PrivateRoute>} />
-          <Route path="Adminfooter" element={<Adminfooter/>} />      
+          <Route path="Adminfooter" element={<PrivateRoute><Adminfooter/></PrivateRoute>} />      
         </Routes>
       </HelmetProvider>
     </BrowserRouter>

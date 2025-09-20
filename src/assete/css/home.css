@@ -192,7 +192,7 @@ position: relative;
 .maathagi_old_design_inpt_3{
     display: flex;
     gap: 5%;
-    padding: 50px;
+    padding: 5px;
 }
 .maathagi_old_design_inpt_4 h2{
     font-size: 20px;
@@ -266,6 +266,7 @@ position: relative;
 .maathagi_div_pic img{
     width: 100%;
     border-radius: 5px;
+    height: 220px;
 }
 .maathagi_new_card_design_back_clr_2{
     display: flex;

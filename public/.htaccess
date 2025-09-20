@@ -13,6 +13,9 @@
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
+  # Exclude backend API from being rewritten by React
+  RewriteCond %{REQUEST_URI} ^/backend
+  RewriteRule ^ - [L]
   # Redirect everything else to index.html
   RewriteRule ^ index.html [L]
 </IfModule>

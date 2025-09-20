@@ -8,11 +8,11 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 const Admin = () => {
 
 
-     const [user_name, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-   const [passwordVisible, setPasswordVisible] = useState(false);
-     const [error, setError] = useState('');
-   const navigate = useNavigate(); 
+    const [user_name, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [passwordVisible, setPasswordVisible] = useState(false);
+    const [error, setError] = useState('');
+    const navigate = useNavigate(); 
 
 
     useEffect(() => {
@@ -94,7 +94,7 @@ const Admin = () => {
                     <br></br>
         <button type="submit"  value="Login">Login</button>
       </form>
-       
+
     </div>
         </>
     )

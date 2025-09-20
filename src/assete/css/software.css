@@ -1,9 +1,9 @@
 .maathagi_software_div{
       background-image: url(../images//software.jpg);
     background-size: cover;
-    background-position: calc(100%);
+    background-position: center;
     width: 100%;
-    height:90vh;
+    height:500px;
 }
 .software_maathagi_div_1{
     display: flex;
@@ -183,8 +183,8 @@
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 1024px) {
     .maathagi_software_div {
-        height: 70vh;
-        background-position: center;
+        height: 300px;
+        
     }
     
     .software_maathagi_div_1,
@@ -222,10 +222,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .maathagi_software_div {
-        height: 60vh;
+  
+      .maathagi_software_div {
+        height: 300px;
+        
     }
-    
     .software_maathagi_main_div_1,
     .software_maathagi_div_design
      {
@@ -258,9 +259,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .maathagi_software_div {
-        height: 50vh;
-    }
+   
     
     .software_maathagi_div_1,
     .software_maathagi_main_div_1,
@@ -296,9 +295,7 @@
 }
 
 @media only screen and (max-width: 360px) {
-    .maathagi_software_div {
-        height: 45vh;
-    }
+   
     
     .software_maathagi_div_design_2 h2 {
         font-size: 22px;

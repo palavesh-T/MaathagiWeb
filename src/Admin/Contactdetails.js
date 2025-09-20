@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import "../Admin/assete/css/contactdeatils.css";
 import Adminheader from "./Adminheader";
-import { ViewDetailsApi , deleteDetailApi} from '../service/Api';
+import { ViewDetailsApi , deleteDetailApi, updateContactApi} from '../service/Api';
 import Adminfooter from './Adminfooter';
 //import moment from 'moment-timezone';
 
 
 const Contactdetails = () =>{
 
-      const [details, setDetails] = useState([]);
+        const [details, setDetails] = useState([]);
         const [showPopup, setShowPopup] = useState(false);
         const [detailToDelete, setDetailToDelete] = useState(null);
-  
+        const [editMessages, setEditMessages] = useState({});
+        const [editMode, setEditMode] = useState({});
 
  //const nowInKolkata = moment().tz('Asia/Kolkata');
 
@@ -68,6 +69,43 @@ const formatDate = (dateString) => {
     return `${day}-${month}-${year}`;
 };
 
+const handleEditClick = (id) => {
+  setEditMode(prev => ({ ...prev, [id]: true }));
+
+  setEditMessages(prev => ({ ...prev, [id]: details.find(d => d.id === id)?.rewrite || "" }));
+};
+
+   const handleEditChange = (id, value) => {
+        setEditMessages(prev => ({ ...prev, [id]: value }));
+    };
+
+    const handleSave = async (id) => {
+        try {
+            const newMessage = editMessages[id];
+            if (!newMessage || newMessage.trim() === "") {
+                alert("rewrite cannot be empty");
+                return;
+            }
+
+            const response = await updateContactApi(id, newMessage);
+            if (response && response.status) {
+                
+                setDetails(prevDetails =>
+                    prevDetails.map(item =>
+                        item.id === id ? { ...item, message: newMessage } : item
+                    )
+                );
+                 setEditMode(prev => ({ ...prev, [id]: false }));
+                 setEditMessages(prev => ({ ...prev, [id]: "" }));
+                alert("rewrit updated successfully!");
+            } else {
+                alert("Failed to update message");
+            }
+        } catch (error) {
+            console.error("Error updating message:", error);
+        }
+    };
+
 // const formatTime = (timeString) => {
 //     if (!timeString || typeof timeString !== 'string') return 'N/A';
 //     const parts = timeString.split(':');
@@ -96,6 +134,7 @@ const formatDate = (dateString) => {
               <th>Service</th>
               <th>Message</th>
               <th>Date</th>
+               <th>Remark</th>
               {/* <th>Time</th> */}
             <th>Delete</th> 
             </tr>
@@ -113,6 +152,49 @@ const formatDate = (dateString) => {
       <td style={{ maxWidth: '300px', maxHeight: '100px', overflow: 'auto' }}>{item.message}</td>
       <td>{formatDate(item.date)}</td>
       {/* <td>{formatTime(item.time)}</td> */}
+            <td>
+                             {editMode[item.id] ? (
+                              <>
+                                  <textarea
+                                            value={editMessages[item.id] || ""}
+                                            onChange={(e) => handleEditChange(item.id, e.target.value)}
+                                            placeholder="Rewrite message"
+                                            style={{ width: '100px', height: '60px',resize: 'none',overflow: 'auto' }}
+                                        />
+                                         <br />
+                                        <button type="button"
+                                            onClick={() => handleSave(item.id)}
+                                            style={{ backgroundColor: 'blue', color: 'white', padding: '4px 4px', marginTop: '5px' }}
+                                        >
+                                            Save
+                                        </button>
+                                        
+                                    </>
+                                ) : (
+                                  <>
+                                  <div
+                                      style={{
+                                        width: '100px',
+                                        height: '50px',
+                                        overflow: 'auto',       
+                                        whiteSpace: 'pre-wrap',  
+                                        wordBreak: 'break-word', 
+                                        border: '1px solid #ddd', 
+                                        padding: '2px', fontSize:"12px"
+                                      }}
+                                    >
+                                      {item.rewrite || "N/A"}
+                                    </div>
+                                    <br />
+                                    <button type="button"
+                                      onClick={() => handleEditClick(item.id)}
+                                      style={{ backgroundColor: 'orange', color: 'white', padding: '4px 8px', marginTop: '5px' }}
+                                    >
+                                      Edit
+                                    </button>
+                                  </>
+                                )}
+                              </td>
        <td><button onClick={() => openDeletePopup(item.id)}>Delete</button></td>
     </tr>
   ))

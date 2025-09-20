@@ -1,9 +1,10 @@
 .domain_maathagi_div{
+    width: 100%;
+    height: 500px; 
      background-image: url(../images//domain.jpg);
     background-size: cover;
-    background-position: calc(100%);
-    width: 100%;
-    height:90vh;
+    background-position:center;
+  
 }
 .maathagi_domain_main_div_4 h1{
     text-align: center;
@@ -43,8 +44,8 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 /* Mobile Responsive Styles for Domain Section */
 @media only screen and (max-width: 1024px) {
     .domain_maathagi_div {
-        height: 70vh;
-        background-position: center;
+        height: 300px;
+       
     }
     
     .maathagi_domain_main_div {
@@ -62,10 +63,11 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 }
 
 @media only screen and (max-width: 768px) {
-    .domain_maathagi_div {
-        height: 60vh;
+   
+      .domain_maathagi_div {
+        height: 300px;
+       
     }
-    
     .maathagi_domain_main_div {
         padding: 25px;
     }
@@ -84,9 +86,7 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 }
 
 @media only screen and (max-width: 480px) {
-    .domain_maathagi_div {
-        height: 50vh;
-    }
+   
     
     .maathagi_domain_main_div {
         padding: 20px;
@@ -108,9 +108,7 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 }
 
 @media only screen and (max-width: 360px) {
-    .domain_maathagi_div {
-        height: 50vh;
-    }
+   
     
     .maathagi_domain_main_div {
         padding: 15px;
@@ -181,4 +179,79 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
   .maathagi_domain_tools h2 {
     font-size: 22px;
   }
+}
+
+.new_tools_topic_div_3 img{
+    width: 100%;
+    height: 180px;
+}
+.new_tools_topic_div_2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+  
+}
+.new_tools_topic_div{
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+}
+.new_tools_topic_div_1{
+    display: flex;
+    gap: 20px;
+}
+.new_tools_conts h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    font-family: calibri;
+}
+.new_tools_conts p {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+}
+.new_tools_conts h1{
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+@media (max-width: 768px) {
+    .new_tools_topic_div {
+        padding: 20px;
+        gap: 15px;
+    }
+    .new_tools_topic_div_1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .new_tools_topic_div_3 img {
+        height: auto; /* keeps aspect ratio */
+    }
+    .new_tools_conts h2 {
+        font-size: 16px;
+    }
+    .new_tools_conts p {
+        font-size: 11px;
+    }
+    .new_tools_conts h1 {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new_tools_topic_div {
+        padding: 20px;
+        gap: 10px;
+    }
+    .new_tools_conts h2 {
+        font-size: 14px;
+    }
+    .new_tools_conts p {
+        font-size: 10px;
+    }
+    .new_tools_conts h1 {
+        font-size: 10px;
+    }
 }

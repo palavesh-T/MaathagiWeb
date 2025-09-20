@@ -35,7 +35,7 @@ const Service = () =>{
                     <h2>High-Quality Work Experiences</h2>
                 </div>
                 <div className="service_maathagi_new_design_div_3">
-                    <p>Welcome to Maathangi Research, where we empower scholars with expert support and guidance. Our services include research proposal development, literature review assistance, data analysis, manuscript preparation and academic coaching.</p>
+                    <p>Welcome to Maathangi IT Solutions, where we empower businesses and individuals with cutting-edge technology services. Our offerings include software development, web and mobile application design, cloud integration, data analytics, cybersecurity solutions, and IT consulting.</p>
                 </div>
                 <div className="service_maathagi_new_design_div_4">
                     <button onClick={() => phd_peoposal("/Contact")} >Contact</button>
@@ -63,11 +63,12 @@ const Service = () =>{
             </div>
             <div className="maathagi_service_div_4">
                 <div className="maathagi_service_div_5">
-                    <h2>Research & Development</h2>
-                    <p>It is considered very important for a research student or research scholar to prove their research skills to the doctoral committee through paper work. Here comes the professional support from MAATHANGI in writing the PhD doctoral thesis work in the way that how University / committee expects. A Doctorate in Philosophy (PhD or DPhil) is one of the highest academic degrees next to Masters. In order to conduct research in an area, PhD researchers require deep knowledge in their interest areas and the working experience on research problem. Our PhD doctorate thesis writing services
-                        </p>
+                    <h2>Artificial Intelligence & Machine Learning</h2>
+                    <p>AI and ML are transforming industries by enabling predictive analytics, automation, and intelligent decision-making. From chatbots to fraud detection, businesses rely on AI for efficiency and innovation. </p>
+                    <h2>Web & Mobile App Development</h2>
+                    <p>From responsive websites to cross-platform apps, development focuses on performance, user experience, and integration with APIs. Frameworks like React, Angular, and Flutter dominate the market.</p>
                         <h2>Why Us?</h2>
-                        <p>MAATHANGI has a strong foundation and ability in undertaking the research and analysis work with a network of doctorate and research guides who would assist in completion of PhD /doctorate /DBA and its related services. Our team comprised of experienced professors, young and dynamic researchers, relevant subject matter expertise, industry professionals who provide continuous support to understand the real world situation, research methodologists, data collection team (both online and offline) statistician team (including econometrician, biostatistician), developers, copy editors (including manuscript editors) and proof readers (manuscript proof readers/thesis proof readers), and formatting and referencing team.
+                        <p>MAATHANGI has a strong foundation and expertise in delivering advanced IT solutions and technology-driven projects. Our team consists of experienced software architects, innovative developers, skilled UI/UX designers, data scientists, cybersecurity specialists, cloud engineers, and quality assurance professionals. We also have experts in emerging technologies such as AI, machine learning, IoT, and blockchain, ensuring cutting-edge solutions for diverse business needs. Additionally, our support team provides continuous assistance with project planning, implementation, testing, and deployment to meet real-world industry standards.
                         </p>
                 </div>
             </div>
@@ -143,7 +144,7 @@ const Service = () =>{
         <div className="new_service_maathagi_div">
             <div className="new_service_maathagi_div_1">
                 <h2>Project Result & Benefits of Project</h2>
-                <p>Our project delivers measurable results aligned with your goals.Experience improved efficiency, performance, and outcomes.Custom solutions ensure lasting value beyond implementation.We focus on both immediate impact and long-term gains.Your success is the ultimate benefit of our work.</p>
+                <p>Our project delivers measurable results aligned with your goals. Experience improved efficiency, performance, and outcomes. Custom solutions ensure lasting value beyond implementation. We focus on both immediate impact and long-term gains. Your success is the ultimate benefit of our work.</p>
             </div>
             <div className="new_service_maathagi_div_2">
                 <img src={service_pic_2} alt=""/>
@@ -154,7 +155,7 @@ const Service = () =>{
             <div className="about_maathagi_background_pic_div_1">
                 <div className="about_maathagi_background_pic_div_2">
                     <h2>Experience</h2>
-                    <p> Our team heads have rich experience in the field of research for more than 15 years especially in the development of questionnaire, research design, quantitative and qualitative study designs, and statistical analysis. The technical heads will guide you through your research journey and drive you to achieve your PhD completion dream. There is complete support at every stage from the identification of PHD topic to the final document.</p>
+                    <p> Our team heads have over 15 years of rich experience in IT, specializing in system design, software development, project management, and data analysis. The technical heads will guide you through your IT journey and drive you to achieve your goals. We provide complete support at every stage, from initial concept to final implementation.</p>
                    
                 </div>
             </div>

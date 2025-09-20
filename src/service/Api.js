@@ -9,6 +9,7 @@ axios.defaults.baseURL= "https://maathangibackend.seataxi.in/backend/";
  const CONTACT_API_URL ="add_contactus";
  const VIEW_URL_VIEW_DETAILS = "View_details";
  const DELETE_DETAIL_API_URL = "contact_delete";
+ const UPDATE_CONTACT_API_URL = "update_rewrite";
 
 
    export const SignInApi= async (data)=>{
@@ -66,3 +67,14 @@ axios.defaults.baseURL= "https://maathangibackend.seataxi.in/backend/";
       throw error;
     }
   };
+
+
+    export const updateContactApi = async (id, rewrite) => {
+  try {
+    const response = await axios.put(`${UPDATE_CONTACT_API_URL}/${id}`, { rewrite });
+    return response.data; // Should return { status: true, message: "Message updated successfully" }
+  } catch (error) {
+    console.error("Error updating contact rewrite:", error);
+    return null;
+  }
+};

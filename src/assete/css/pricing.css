@@ -1,0 +1,13 @@
+.pricing{
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/banner\ 2.jfif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;;
+}
+
+@media only screen and (max-width: 768px) {
+    .pricing {
+        height: 300px;
+    }
+}

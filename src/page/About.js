@@ -34,7 +34,7 @@ const About = () =>{
                 <div className="maathagi_about_div_2">
                     <div className="maathagi_about_div_3">
                         <h2>Creative solutions</h2>
-                        <h3>Research Needs</h3>
+                        {/* <h3>IT Research Needs</h3> */}
 
                         <div className="maathagi_about_div_4">
                             <div className="maathagi_about_div_5">
@@ -45,7 +45,7 @@ const About = () =>{
                                 {/* <p>Our PhD doctorate thesis writing services.</p> */}
                             </div>
                         </div>
-                        <p>We ensure that your research data, like your concept, collected data, interview transcripts, printed copies of these works, soft copies, research articles and every document related to your research is confidential and strictly handled only for the internal purposes. We have an efficient client service team to assist you  with all your service-related queries. Although it may not appear very special to you, we want to tell you how we differentiate our solutions from what you can receive from any other service provider.</p>
+                        <p>We ensure that all your project data including source code, design files, databases, configuration settings, and related documentation  remains fully confidential and is handled strictly for internal purposes only. Our advanced security protocols guarantee data privacy and integrity throughout the development cycle. We have a dedicated client support team to assist you with all your service-related queries. While this may seem standard, what truly sets us apart is our commitment to delivering innovative, secure, and customized IT solutions that go beyond what typical service providers offer.</p>
                     </div>
                     <div className="maathagi_about_div_7">
                         <img src={about_maathagi_1} alt="" />
@@ -71,8 +71,8 @@ const About = () =>{
                             <img src={puzzle_pic_1} alt="" />
                         </div>
                         <div className='abou_cont_div_cot'>
-                            <h2>Topic selection</h2>
-                            <p>Choosing the right topic is the first step in any successful project or research. It should align with your interests and the goals of your study or work.</p>
+                            <h2>Software Development</h2>
+                            <p>Choosing the right topic is the first step in any successful project . It should align with your interests and the goals of your study or work.</p>
                         </div>
                     </div>
                     <div className='about_card_1'>
@@ -107,7 +107,7 @@ const About = () =>{
         <div className="about_new_contents">
             <div className="about_new_contents_1">
                 <h1>maathangi info research solutions</h1>
-                <p>we are furnishing individuals in all technologies and domains by fulfilling their desires in Research & Development sector through efficient training methodologies.</p>
+                <p>We empower individuals across all IT technologies and domains by fulfilling their aspirations through innovative and efficient training methodologies.</p>
             </div>
         </div>
 
@@ -163,7 +163,7 @@ const About = () =>{
                  <div className="about_maathagi_card_div_2">
                     <div className="about_maathagi_card_div_3">
                     <h2>WHO WE ARE</h2>
-                    <p>We are serving more than 250+ Ph. D candidates since 2013. Maathangi Research Solutions specializes in creating and delivering research oriented assignments, varied in nature, with an assurance of on-time delivery and content free from plagiarism. We are providing Academic and PhD Thesis-Research Writing Services globally.</p>
+                    <p>We have been serving more than 250+ clients since 2019. Maathangi IT Solutions specializes in delivering innovative technology services and solutions, tailored to diverse business needs, with a strong focus on quality, timely delivery, and reliability. We provide end-to-end IT services including software development, web design, data analytics, cloud solutions, and technical consulting across the globe.</p>
                 </div>
                 
             </div>

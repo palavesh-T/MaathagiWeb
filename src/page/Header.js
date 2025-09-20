@@ -154,9 +154,9 @@ return (
          <li>
   <Link to="/Domains" onClick={phd_peoposal} className={location.pathname === "/Domains" ? "active-menu" : ""}>DOMAINS</Link>
 </li>
-       <li>
-  <Link to="/Phd" onClick={phd_peoposal} className={location.pathname === "/Phd" ? "active-menu" : ""}>PHD SERVICES</Link>
-</li>
+        <li>
+  <Link to="/Pricing" onClick={phd_peoposal} className={location.pathname === "/Pricing" ? "active-menu" : ""}>PRICING</Link>
+</li> 
            <li>
   <Link to="/Softwaredevelopment" onClick={phd_peoposal} className={location.pathname === "/Softwaredevelopment" ? "active-menu" : ""}>SOFTWARE DEVELOPMENT</Link>
 </li>

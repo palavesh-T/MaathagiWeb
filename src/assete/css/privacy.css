@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height:90vh;
+    height:500px;
 }
 .privacy_policay_main_div{
     padding: 50px;
@@ -21,8 +21,8 @@
 /* Mobile view CSS */
 @media (max-width: 768px) {
     .privacy_maathagi_div {
-        height: 50vh;
-        background-position: center;
+        height: 300px;
+       
     }
 
     .privacy_policay_main_div {
