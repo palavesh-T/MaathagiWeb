@@ -1,0 +1,243 @@
+.view_career_dtls,.view_cares_dlts_1{
+    padding: 10px;
+}
+.view_cares_dlts_1 h2{
+    text-align: center;
+    margin-top:5%;
+}
+.view_dtls_main_div_bank{
+    padding: 30px;
+}
+
+.view_dtls_card_div_bank{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width:30%;
+    min-width: 300px;
+    height: 270px;
+padding: 20px;
+border-radius: 10px;
+}
+.view_dtls_card_div_bank h2{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: calibari;
+}
+.view_career_dtls {
+    text-align: center;
+   
+  }
+  
+  .view_dtls_main_div_bank {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 0%; /* Space between cards */
+    padding: 20px;
+  }
+  
+  .view_dlts_div_1_bank {
+    /* flex-grow: 1; */
+    position: relative;
+    /* flex: 1 1 calc(33.333% - 40px); 
+    max-width: calc(33.333% - 40px);
+    min-width: 300px; 
+    box-sizing: border-box;*/
+    width: 30%; /* Adjust width to display three cards per row */
+  min-width: 350px; /* Optional: ensure a minimum size for smaller screens */
+  }
+  .view_dtls_card_div_bank {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .show_more_div_bank {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .show_more_btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .show_more_btn:hover {
+    background-color: #0056b3;
+  }
+  .view_dtls_card_div_bank label{
+    width: 130px;
+    display: inline-block;
+  }
+  .delete_btn_bank {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .view_dtls_card_div_bank input,
+  .view_dtls_card_div_bank textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .view_dtls_card_div_bank textarea {
+    resize: vertical;
+    height: 70px;
+  }
+  
+  /* Input fields focus style */
+  .view_dtls_card_div_bank input:focus,
+  .view_dtls_card_div_bank textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Update and Cancel button styles */
+  .view_dtls_card_div_bank button {
+    padding: 0px 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .view_dtls_card_div_bank button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Update button style */
+  .view_dtls_card_div_bank button:nth-child(6) {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .view_dtls_card_div_bank button:nth-child(6):hover {
+    background-color: #dc3545;
+  }
+  
+  /* Cancel button style */
+  .view_dtls_card_div_bank button:nth-child(7) {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .view_dtls_card_div_bank button:nth-child(7):hover {
+    background-color: #c82333;
+  }
+  .view_dtls_main_div_bank button svg{
+    width: 20px;
+    padding: 3px;
+  }
+
+  
+  .view_dlts_div_1_bank h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .view_dlts_div_1_bank label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Buttons for actions */
+  .delete_btn_bank {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 8px;
+    cursor: pointer;
+  }
+  
+  .delete_btn_bank:hover {
+    background-color: #e63946;
+  }
+  
+  .show_more_btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .show_more_btn:hover {
+    background-color: #0056b3;
+  }
+  .edit_btn {
+  padding: 10px 15px;
+  }
+  .body-div{
+    height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+  .container_dashboard{
+    margin-top: 60px;
+  }
+  .dashboard_main_div {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  .dashboard_div_1_bank {
+    background-color: #fff;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    height: 500px;
+    overflow: auto;
+    width: 83%;
+    margin: 0% 15%;
+  }
+
+  .btn_bank button{
+    padding: 5px 15px;
+    background-color: darkblue;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+  }
+  .btn_bank a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .krejbgjk h2{
+    font-size: 15px;
+    text-align: center;
+  }

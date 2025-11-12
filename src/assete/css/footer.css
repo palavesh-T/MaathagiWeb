@@ -67,6 +67,11 @@
 .phone-loc{
   margin-top: -45px;
 }
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 @media (max-width: 768px) {
   .footer-container {
@@ -134,4 +139,9 @@
     padding: 0px 5px 0;
     line-height: 1.6;
   }
+  .footer-bottom{
+  display: flow;
+  /* justify-content: space-between; */
+  align-items: center;
+}
 }

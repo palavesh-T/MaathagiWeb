@@ -194,6 +194,9 @@ return (
                 <Link to="/Literature" onClick={phd_peoposal}>Literature Review</Link>
               </div>
             </li> */}
+             <li>
+  <Link to="/Payment" onClick={phd_peoposal} className={location.pathname === "/Payment" ? "active-menu" : ""}>PAYMENT OPTION</Link>
+</li> 
          <li>
   <Link to="/Contact" onClick={phd_peoposal} className={location.pathname === "/Contact" ? "active-menu" : ""}>CONTACT</Link>
 </li>

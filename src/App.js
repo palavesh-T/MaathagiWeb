@@ -19,6 +19,10 @@ import Contactdetails from "./Admin/Contactdetails";
 import Adminfooter from "./Admin/Adminfooter";
 import Softwaredevelopment from "./page/Softwaredevelopment";
 import Pricing from "./page/Pricing";
+import Payment from "./page/Payment";
+import Bankdetails from "./Admin/Bankdetails";
+import Viewbankdetails from "./Admin/Viewbankdetails";
+import Qrimage from "./Admin/Qrimage";
 
 function App() {
   return (
@@ -35,6 +39,7 @@ function App() {
           <Route path="Contact" element={<Contact/>} />
           <Route path="Domains" element={<Domains/>} /> 
           <Route path="Pricing" element={<Pricing/>} />
+          <Route path="Payment" element={<Payment/>} />
           <Route path="Phd"  element={<Phd/>} />
           <Route path="Privacypolicy" element={<Privacypolicy/>} />
           <Route path="Terms" element={<Terms/>} />
@@ -44,7 +49,10 @@ function App() {
           <Route path="Admin" element={<Admin/>} />
           <Route path="Changepassword" element={<PrivateRoute><Changepassword/></PrivateRoute>} />
           <Route path="Contactdetails" element={<PrivateRoute><Contactdetails/></PrivateRoute>} />
-          <Route path="Adminfooter" element={<PrivateRoute><Adminfooter/></PrivateRoute>} />      
+          <Route path="Adminfooter" element={<PrivateRoute><Adminfooter/></PrivateRoute>} />
+          <Route path="Bankdetails" element={<Bankdetails/>} />
+          <Route path="Viewbankdetails" element={<Viewbankdetails/>} />  
+          <Route path="Qrimage" element={<Qrimage/>} />    
         </Routes>
       </HelmetProvider>
     </BrowserRouter>

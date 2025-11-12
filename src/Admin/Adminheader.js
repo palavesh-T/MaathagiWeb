@@ -14,6 +14,8 @@ const Adminheader = () =>{
       <div className="admin-header-right">
           <Link to="/Contactdetails" className="admin-menu">Contact Details</Link>
         <Link to="/Changepassword" className="admin-menu">Change Password</Link>
+         <Link to="/Bankdetails" className="admin-menu">Bankdetails</Link>
+         <Link to="/Qrimage" className="admin-menu">QR Image</Link>
         <Link to="/Admin" className="admin-menu">Logout</Link>
       </div>
     </div>

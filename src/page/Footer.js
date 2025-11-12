@@ -50,6 +50,7 @@ const  Footer = () => {
   </div>
   <div className="footer-bottom">
     <p>Copyright © 2024 - 2025 <strong>MAATHANGI</strong> | All Rights Reserved</p>
+    <span  id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSealPremium?sealID=YhCz3b9trR398Nz7We6VyzELAdSVp4j07CR6aiAfDnqYgDWCb2uDWKKJ7Qms"></script></span>
   </div>
 </footer>
 

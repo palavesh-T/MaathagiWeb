@@ -1,0 +1,74 @@
+.body-div{
+    height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+  .container_dashboard{
+    margin-top: 60px;
+  }
+  .dashboard_main_div {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  .dashboard_div_bank {
+    background-color: #fff;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    height: 450px;
+    overflow: auto;
+    width: 85%;
+    margin: 0% 15%;
+  }
+  .bankdetails_1 h2{
+    font-size: 15px;
+}
+.bankdetails_1 input{
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    border:1px solid black
+}
+.bankdetails_1 textarea{
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    border:1px solid black
+}
+.bankdetails_main_details{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 50%;
+    height: auto;
+    margin: 0% 23%;
+    border-radius: 10px;
+}
+
+.bank_btn{
+    margin-top: 10px;
+}
+.bank_btn button{
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: darkblue;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+.btn_bank_new button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: darkblue;
+}
+.btn_bank_new a{
+    text-decoration: none;
+    color: #fff;
+}
+.add_bank_conts h2{
+    text-align: center;
+    font-size: 15px;
+}
