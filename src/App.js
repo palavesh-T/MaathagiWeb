@@ -50,9 +50,9 @@ function App() {
           <Route path="Changepassword" element={<PrivateRoute><Changepassword/></PrivateRoute>} />
           <Route path="Contactdetails" element={<PrivateRoute><Contactdetails/></PrivateRoute>} />
           <Route path="Adminfooter" element={<PrivateRoute><Adminfooter/></PrivateRoute>} />
-          <Route path="Bankdetails" element={<Bankdetails/>} />
-          <Route path="Viewbankdetails" element={<Viewbankdetails/>} />  
-          <Route path="Qrimage" element={<Qrimage/>} />    
+          <Route path="Bankdetails" element={<PrivateRoute><Bankdetails/></PrivateRoute>} />
+          <Route path="Viewbankdetails" element={<PrivateRoute><Viewbankdetails/></PrivateRoute>} />  
+          <Route path="Qrimage" element={<PrivateRoute><Qrimage/></PrivateRoute>} />    
         </Routes>
       </HelmetProvider>
     </BrowserRouter>

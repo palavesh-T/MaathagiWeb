@@ -12,7 +12,7 @@ import MetaTitle from '../components/MetaTittle';
 
 const Contact =() =>{
 
-      const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
     user_name: '',
     user_phone: '',
     user_email: '',
